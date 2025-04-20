@@ -20,7 +20,7 @@ Founded by a team passionate about combining technology with compassion, bioxbin
 - **Affordable Solutions**: We prioritize affordability without compromising quality, ensuring our devices are accessible to a wide range of families and caregivers.
 
 ## Learn More
-For more information, visit our [website](https://www.bioxbinary.io).
+For more information, visit our [website](https://www.bioxbinary.in).
 
 
 ## Contact
