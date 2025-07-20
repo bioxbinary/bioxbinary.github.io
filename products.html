@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Bioxbinary Systems</title>
+    <meta name="description" content="Explore Bioxbinary's cutting-edge AI products: Neural interfaces, edge computing systems, and smart agriculture solutions.">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="particles"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BIOXBINARY</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#divisions">Labs</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="index.html#collaborate">Collaborate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero-section">
+            <h1 class="hero-title">BioX Architecture</h1>
+            <p class="hero-subtitle">Advanced AI systems that push the boundaries of what's possible</p>
+        </section>
+
+        <div class="category-tabs">
+            <button class="tab-button active" data-category="healthtech">🧠 Assistive HealthTech</button>
+            <button class="tab-button" data-category="edge-ai">⚡ Edge AI Systems</button>
+            <button class="tab-button" data-category="agritech">🌱 AgriTech Solutions</button>
+        </div>
+
+        <!-- Assistive HealthTech Products -->
+        <div class="products-grid active" id="healthtech">
+            <div class="product-card" data-product="dosextrack">
+                <div class="product-status">Available</div>
+                <span class="product-icon">💊</span>
+                <h3 class="product-title">DoseXTrack</h3>
+                <p class="product-description">
+                    An AI-powered platform for tracking and optimizing medication dosage, ensuring patient safety and efficacy.
+                </p>
+                <div class="tech-specs">
+                    <h4>Core Technologies</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">AI Dosage Algorithms</span>
+                        <span class="spec-tag">Real-time Monitoring</span>
+                        <span class="spec-tag">Patient Data Analytics</span>
+                        <span class="spec-tag">Secure Cloud Platform</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('dosextrack')">Technical Details</button>
+                    <a href="contact.html" class="action-button secondary">Get Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="neural-bridge">
+                <div class="product-status">In Development</div>
+                <span class="product-icon">🧠</span>
+                <h3 class="product-title">NeuraLink Bridge X1</h3>
+                <p class="product-description">
+                    Next-generation brain-computer interface enabling direct neural control of digital devices. Features ultra-low latency signal processing and adaptive learning algorithms.
+                </p>
+                <div class="tech-specs">
+                    <h4>Core Technologies</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Neural Signal Processing</span>
+                        <span class="spec-tag">Real-time ML</span>
+                        <span class="spec-tag">Biocompatible Materials</span>
+                        <span class="spec-tag">Wireless Power</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('neural-bridge')">Technical Details</button>
+                    <a href="contact.html" class="action-button secondary">Request Demo</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="sensory-augment">
+                <div class="product-status prototype">Prototype</div>
+                <span class="product-icon">👁️</span>
+                <h3 class="product-title">Sensory Augmentation Suite</h3>
+                <p class="product-description">
+                    AI-powered sensory replacement and enhancement system. Converts visual, auditory, and tactile information into alternative sensory channels for accessibility.
+                </p>
+                <div class="tech-specs">
+                    <h4>Key Features</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Computer Vision</span>
+                        <span class="spec-tag">Haptic Feedback</span>
+                        <span class="spec-tag">Audio Processing</span>
+                        <span class="spec-tag">Neural Adaptation</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('sensory-augment')">Learn More</button>
+                    <a href="contact.html" class="action-button secondary">Join Beta</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="mobility-ai">
+                <div class="product-status">Available</div>
+                <span class="product-icon">🦾</span>
+                <h3 class="product-title">Adaptive Mobility AI</h3>
+                <p class="product-description">
+                    Smart prosthetics and mobility aids with predictive movement algorithms. Learns user patterns and environmental context for seamless integration.
+                </p>
+                <div class="tech-specs">
+                    <h4>Specifications</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Predictive Control</span>
+                        <span class="spec-tag">IMU Sensors</span>
+                        <span class="spec-tag">Edge Computing</span>
+                        <span class="spec-tag">Biometric Auth</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('mobility-ai')">View Specs</button>
+                    <a href="contact.html" class="action-button secondary">Get Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="neural-therapy">
+                <div class="product-status concept">Research</div>
+                <span class="product-icon">🧬</span>
+                <h3 class="product-title">NeuroTherapy Protocol</h3>
+                <p class="product-description">
+                    AI-guided neuroplasticity enhancement system. Uses personalized stimulation patterns to accelerate neural recovery and cognitive enhancement.
+                </p>
+                <div class="tech-specs">
+                    <h4>Research Areas</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Neuroplasticity</span>
+                        <span class="spec-tag">Cognitive Training</span>
+                        <span class="spec-tag">Biofeedback</span>
+                        <span class="spec-tag">Personalized Medicine</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('neural-therapy')">Research Data</button>
+                    <a href="contact.html" class="action-button secondary">Collaborate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edge AI Systems Products -->
+        <div class="products-grid" id="edge-ai">
+            <div class="product-card" data-product="quantum-edge">
+                <div class="product-status">In Development</div>
+                <span class="product-icon">⚡</span>
+                <h3 class="product-title">Quantum Edge Processor</h3>
+                <p class="product-description">
+                    Hybrid quantum-classical computing unit for ultra-fast AI inference at the edge. Processes complex algorithms with minimal power consumption.
+                </p>
+                <div class="tech-specs">
+                    <h4>Architecture</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Quantum Annealing</span>
+                        <span class="spec-tag">Neuromorphic Chips</span>
+                        <span class="spec-tag">Distributed Computing</span>
+                        <span class="spec-tag">Energy Harvesting</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('quantum-edge')">Architecture Details</button>
+                    <a href="contact.html" class="action-button secondary">Early Access</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="mesh-network">
+                <div class="product-status prototype">Prototype</div>
+                <span class="product-icon">🕸️</span>
+                <h3 class="product-title">Autonomous Mesh Network</h3>
+                <p class="product-description">
+                    Self-organizing IoT network with distributed AI. Each node contributes to collective intelligence while maintaining local autonomy.
+                </p>
+                <div class="tech-specs">
+                    <h4>Network Features</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Mesh Topology</span>
+                        <span class="spec-tag">Federated Learning</span>
+                        <span class="spec-tag">Self-Healing</span>
+                        <span class="spec-tag">Byzantine Fault Tolerance</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('mesh-network')">Network Specs</button>
+                    <a href="contact.html" class="action-button secondary">Pilot Program</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="predictive-sensors">
+                <div class="product-status">Available</div>
+                <span class="product-icon">🔮</span>
+                <h3 class="product-title">Predictive Sensor Array</h3>
+                <p class="product-description">
+                    Multi-modal sensor system with AI-powered anomaly detection. Predicts system failures and environmental changes before they occur.
+                </p>
+                <div class="tech-specs">
+                    <h4>Sensor Types</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Environmental</span>
+                        <span class="spec-tag">Vibration Analysis</span>
+                        <span class="spec-tag">Thermal Imaging</span>
+                        <span class="spec-tag">Chemical Detection</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('predictive-sensors')">Sensor Specs</button>
+                    <a href="contact.html" class="action-button secondary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="edge-security">
+                <div class="product-status concept">Research</div>
+                <span class="product-icon">🛡️</span>
+                <h3 class="product-title">Quantum Security Protocol</h3>
+                <p class="product-description">
+                    Next-gen cybersecurity using quantum encryption and AI threat detection. Provides unhackable communication channels for edge devices.
+                </p>
+                <div class="tech-specs">
+                    <h4>Security Features</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Quantum Encryption</span>
+                        <span class="spec-tag">AI Threat Detection</span>
+                        <span class="spec-tag">Zero Trust</span>
+                        <span class="spec-tag">Behavioral Analysis</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('edge-security')">Security Overview</button>
+                    <a href="contact.html" class="action-button secondary">Research Partnership</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AgriTech Solutions Products -->
+        <div class="products-grid" id="agritech">
+            <div class="product-card" data-product="climate-adapt">
+                <div class="product-status">In Development</div>
+                <span class="product-icon">🌡️</span>
+                <h3 class="product-title">Climate Adaptation Engine</h3>
+                <p class="product-description">
+                    AI system that adapts growing conditions in real-time based on climate data and plant biometrics. Optimizes yield while minimizing resource usage.
+                </p>
+                <div class="tech-specs">
+                    <h4>Adaptive Systems</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Climate Modeling</span>
+                        <span class="spec-tag">Biometric Sensors</span>
+                        <span class="spec-tag">Resource Optimization</span>
+                        <span class="spec-tag">Genetic Analysis</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('climate-adapt')">System Overview</button>
+                    <a href="contact.html" class="action-button secondary">Field Trial</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="hydro-mind">
+                <div class="product-status prototype">Prototype</div>
+                <span class="product-icon">💧</span>
+                <h3 class="product-title">HydroMind Controller</h3>
+                <p class="product-description">
+                    Intelligent hydroponic system with neural network-based plant health monitoring. Automatically adjusts nutrients, pH, and lighting conditions.
+                </p>
+                <div class="tech-specs">
+                    <h4>Control Systems</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Nutrient Balancing</span>
+                        <span class="spec-tag">pH Regulation</span>
+                        <span class="spec-tag">LED Optimization</span>
+                        <span class="spec-tag">Growth Prediction</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('hydro-mind')">Controller Features</button>
+                    <a href="contact.html" class="action-button secondary">Beta Test</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="precision-drones">
+                <div class="product-status">Available</div>
+                <span class="product-icon">🚁</span>
+                <h3 class="product-title">Precision AgriDrones</h3>
+                <p class="product-description">
+                    Autonomous drone swarms for precision agriculture. Multi-spectral imaging, targeted treatment delivery, and crop health assessment.
+                </p>
+                <div class="tech-specs">
+                    <h4>Drone Capabilities</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">Swarm Intelligence</span>
+                        <span class="spec-tag">Multi-Spectral Imaging</span>
+                        <span class="spec-tag">Precision Spraying</span>
+                        <span class="spec-tag">Real-time Analytics</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('precision-drones')">Drone Specs</button>
+                    <a href="contact.html" class="action-button secondary">Purchase</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="soil-ai">
+                <div class="product-status concept">Research</div>
+                <span class="product-icon">🌱</span>
+                <h3 class="product-title">Soil Microbiome AI</h3>
+                <p class="product-description">
+                    Revolutionary soil analysis using AI-powered microbiome sequencing. Optimizes soil health through targeted microbial interventions.
+                </p>
+                <div class="tech-specs">
+                    <h4>Analysis Methods</h4>
+                    <div class="spec-list">
+                        <span class="spec-tag">DNA Sequencing</span>
+                        <span class="spec-tag">Microbial Networks</span>
+                        <span class="spec-tag">Ecosystem Modeling</span>
+                        <span class="spec-tag">Nutrient Cycling</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button" onclick="openModal('soil-ai')">Research Data</button>
+                    <a href="contact.html" class="action-button secondary">Lab Partnership</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modalContent">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="index.html" class="back-to-home">← Back to Bioxbinary Home</a>
+        <p>© 2025 Bioxbinary Systems | Neural Architecture Division | Privacy Protocol Active</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Particle animation
+        function createParticles() {
+            const particleContainer = document.querySelector('.particles');
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particleContainer.appendChild(particle);
+            }
+        }
+
+        // Tab switching functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and grids
+                document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.products-grid').forEach(g => g.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Show corresponding grid
+                const category = button.getAttribute('data-category');
+                document.getElementById(category).classList.add('active');
+            });
+        });
+
+        // Product detail data
+        const productData = {
+            'dosextrack': {
+                title: 'DoseXTrack',
+                icon: '💊',
+                status: 'Available',
+                description: 'DoseXTrack is an AI-powered platform that tracks and optimizes medication dosage, ensuring patient safety and efficacy. It provides real-time monitoring and data analytics to help healthcare professionals make informed decisions.',
+                features: [
+                    'AI-driven dosage recommendations',
+                    'Real-time patient monitoring',
+                    'Secure cloud-based data storage',
+                    'Customizable alerts and notifications',
+                    'Integration with electronic health records (EHRs)'
+                ],
+                applications: [
+                    'Oncology dose management',
+                    'Chronic disease medication tracking',
+                    'Pediatric dosage optimization',
+                    'Clinical trial monitoring'
+                ],
+                timeline: 'Available now | Version 2.0 coming in Q3 2025'
+            },
+            'neural-bridge': {
+                title: 'NeuraLink Bridge X1',
+                icon: '🧠',
+                status: 'In Development',
+                description: 'Our most advanced brain-computer interface, the NeuraLink Bridge X1 represents a quantum leap in neural technology. This revolutionary device creates a direct pathway between human consciousness and digital systems.',
+                features: [
+                    'Ultra-high resolution neural signal capture (10,000+ channels)',
+                    'Real-time ML processing with <1ms latency',
+                    'Biocompatible titanium-polymer construction',
+                    'Wireless power transmission and data transfer',
+                    'Adaptive learning algorithms for personalized control',
+                    'FDA breakthrough device designation pathway'
+                ],
+                applications: [
+                    'Paralysis recovery and mobility restoration',
+                    'Direct computer control for accessibility',
+                    'Memory enhancement and cognitive augmentation',
+                    'Treatment-resistant depression therapy',
+                    'Advanced prosthetic control'
+                ],
+                timeline: 'Clinical trials: Q2 2025 | Limited release: 2027'
+            },
+            'sensory-augment': {
+                title: 'Sensory Augmentation Suite',
+                icon: '👁️',
+                status: 'Prototype',
+                description: 'Transform how humans perceive the world. Our Sensory Augmentation Suite converts visual, auditory, and tactile information into alternative sensory channels, creating new pathways for human-world interaction.',
+                features: [
+                    'Real-time computer vision with object recognition',
+                    'Advanced haptic feedback arrays',
+                    '360-degree spatial audio processing',
+                    'Neural plasticity training protocols',
+                    'Multi-modal sensory substitution',
+                    'Wearable, lightweight form factor'
+                ],
+                applications: [
+                    'Vision restoration for the blind',
+                    'Hearing enhancement for the deaf',
+                    'Enhanced spatial awareness',
+                    'Industrial safety applications',
+                    'Virtual reality integration'
+                ],
+                timeline: 'Beta testing: Q4 2025 | Commercial release: 2026'
+            },
+            'mobility-ai': {
+                title: 'Adaptive Mobility AI',
+                icon: '🦾',
+                status: 'Available',
+                description: 'Revolutionary prosthetics and mobility aids powered by predictive AI. Our system learns user patterns and environmental context to provide seamless, intuitive movement assistance.',
+                features: [
+                    'Predictive movement algorithms',
+                    'Multi-sensor fusion (IMU, pressure, EMG)',
+                    'Edge computing for real-time processing',
+                    'Biometric authentication and security',
+                    'Modular, upgradeable hardware',
+                    'Cloud-based learning updates'
+                ],
+                applications: [
+                    'Advanced prosthetic limbs',
+                    'Powered exoskeletons',
+                    'Mobility assistance devices',
+                    'Rehabilitation training systems',
+                    'Sports performance enhancement'
+                ],
+                timeline: 'Available now | Next-gen release: Q1 2026'
+            },
+            'neural-therapy': {
+                title: 'NeuroTherapy Protocol',
+                icon: '🧬',
+                status: 'Research',
+                description: 'Cutting-edge research into AI-guided neuroplasticity enhancement. Our protocols use personalized stimulation patterns to accelerate neural recovery and enhance cognitive function.',
+                features: [
+                    'Personalized neuroplasticity protocols',
+                    'Non-invasive brain stimulation',
+                    'Real-time biofeedback systems',
+                    'AI-optimized therapy schedules',
+                    'Progress tracking and adaptation',
+                    'Integration with existing therapies'
+                ],
+                applications: [
+                    'Stroke recovery acceleration',
+                    'Traumatic brain injury rehabilitation',
+                    'Cognitive enhancement for aging',
+                    'Depression and anxiety treatment',
+                    'Learning disability support'
+                ],
+                timeline: 'Research phase | Clinical trials: 2026'
+            },
+            'quantum-edge': {
+                title: 'Quantum Edge Processor',
+                icon: '⚡',
+                status: 'In Development',
+                description: 'The future of edge computing is here. Our Quantum Edge Processor combines quantum annealing with neuromorphic computing to deliver unprecedented AI performance at the edge.',
+                features: [
+                    'Hybrid quantum-classical architecture',
+                    'Ultra-low power consumption (<5W)',
+                    'Quantum annealing optimization',
+                    'Neuromorphic spike processing',
+                    'Distributed computing capabilities',
+                    'Energy harvesting integration'
+                ],
+                applications: [
+                    'Autonomous vehicle processing',
+                    'Smart city infrastructure',
+                    'Industrial IoT optimization',
+                    'Real-time medical diagnostics',
+                    'Environmental monitoring networks'
+                ],
+                timeline: 'Prototype: Q3 2025 | Limited production: 2026'
+            },
+            'mesh-network': {
+                title: 'Autonomous Mesh Network',
+                icon: '🕸️',
+                status: 'Prototype',
+                description: 'Self-organizing, self-healing IoT networks with distributed AI. Each node contributes to collective intelligence while maintaining complete local autonomy and security.',
+                features: [
+                    'Self-organizing mesh topology',
+                    'Federated learning algorithms',
+                    'Byzantine fault tolerance',
+                    'Dynamic load balancing',
+                    'Quantum-resistant encryption',
+                    'Edge-to-cloud integration'
+                ],
+                applications: [
+                    'Smart city sensor networks',
+                    'Industrial monitoring systems',
+                    'Emergency response networks',
+                    'Agricultural sensor arrays',
+                    'Environmental monitoring'
+                ],
+                timeline: 'Beta deployment: Q1 2025 | Full release: Q3 2025'
+            },
+            'predictive-sensors': {
+                title: 'Predictive Sensor Array',
+                icon: '🔮',
+                status: 'Available',
+                description: 'Multi-modal sensor systems with AI-powered predictive capabilities. Detect anomalies and predict failures before they occur, revolutionizing predictive maintenance.',
+                features: [
+                    'Multi-modal sensor fusion',
+                    'Real-time anomaly detection',
+                    'Predictive failure analysis',
+                    'Wireless sensor networks',
+                    'Cloud-based analytics',
+                    'Industrial IoT integration'
+                ],
+                applications: [
+                    'Industrial equipment monitoring',
+                    'Infrastructure health assessment',
+                    'Environmental quality tracking',
+                    'Smart building systems',
+                    'Transportation safety'
+                ],
+                timeline: 'Available for order | Delivery: 4-6 weeks'
+            },
+            'edge-security': {
+                title: 'Quantum Security Protocol',
+                icon: '🛡️',
+                status: 'Research',
+                description: 'Next-generation cybersecurity using quantum encryption and AI threat detection. Provides mathematically unbreakable communication channels for edge devices.',
+                features: [
+                    'Quantum key distribution',
+                    'AI-powered threat detection',
+                    'Zero-trust architecture',
+                    'Behavioral anomaly analysis',
+                    'Post-quantum cryptography',
+                    'Real-time response systems'
+                ],
+                applications: [
+                    'Critical infrastructure protection',
+                    'Financial transaction security',
+                    'Healthcare data protection',
+                    'Government communications',
+                    'IoT device security'
+                ],
+                timeline: 'Research phase | Prototype: Late 2025'
+            },
+            'climate-adapt': {
+                title: 'Climate Adaptation Engine',
+                icon: '🌡️',
+                status: 'In Development',
+                description: 'Revolutionary AI system that adapts growing conditions in real-time based on climate data and plant biometrics. Maximizes yield while minimizing environmental impact.',
+                features: [
+                    'Real-time climate modeling',
+                    'Plant biometric monitoring',
+                    'Resource optimization algorithms',
+                    'Genetic trait analysis',
+                    'Weather prediction integration',
+                    'Sustainable farming protocols'
+                ],
+                applications: [
+                    'Precision agriculture optimization',
+                    'Climate-resilient crop production',
+                    'Greenhouse automation',
+                    'Drought management systems',
+                    'Carbon footprint reduction'
+                ],
+                timeline: 'Field trials: Q2 2025 | Commercial release: 2026'
+            },
+            'hydro-mind': {
+                title: 'HydroMind Controller',
+                icon: '💧',
+                status: 'Prototype',
+                description: 'Intelligent hydroponic system with neural network-based plant health monitoring. Automatically optimizes all growing conditions for maximum yield and quality.',
+                features: [
+                    'Neural network plant monitoring',
+                    'Automated nutrient balancing',
+                    'pH and EC regulation',
+                    'LED spectrum optimization',
+                    'Growth pattern prediction',
+                    'Mobile app integration'
+                ],
+                applications: [
+                    'Commercial hydroponic farms',
+                    'Indoor vertical farming',
+                    'Research greenhouses',
+                    'Home growing systems',
+                    'Pharmaceutical plant cultivation'
+                ],
+                timeline: 'Beta testing: Q4 2025 | Product launch: Q2 2026'
+            },
+            'precision-drones': {
+                title: 'Precision AgriDrones',
+                icon: '🚁',
+                status: 'Available',
+                description: 'Autonomous drone swarms for precision agriculture. Advanced imaging, targeted treatment delivery, and real-time crop health assessment at unprecedented scale.',
+                features: [
+                    'Swarm intelligence algorithms',
+                    'Multi-spectral imaging sensors',
+                    'Precision spray systems',
+                    'Real-time data analytics',
+                    'Weather-adaptive flight control',
+                    'Fleet management software'
+                ],
+                applications: [
+                    'Large-scale crop monitoring',
+                    'Precision pesticide application',
+                    'Irrigation management',
+                    'Crop yield prediction',
+                    'Livestock monitoring'
+                ],
+                timeline: 'Available for purchase | Training included'
+            },
+            'soil-ai': {
+                title: 'Soil Microbiome AI',
+                icon: '🌱',
+                status: 'Research',
+                description: 'Revolutionary soil analysis using AI-powered microbiome sequencing. Optimizes soil health through targeted microbial interventions for sustainable agriculture.',
+                features: [
+                    'DNA sequencing analysis',
+                    'Microbial network modeling',
+                    'Ecosystem health prediction',
+                    'Nutrient cycling optimization',
+                    'Biodiversity assessment',
+                    'Targeted intervention protocols'
+                ],
+                applications: [
+                    'Soil health restoration',
+                    'Sustainable farming practices',
+                    'Carbon sequestration projects',
+                    'Ecological restoration',
+                    'Agricultural sustainability'
+                ],
+                timeline: 'Research phase | Lab partnerships available'
+            }
+        };
+
+        // Modal functionality
+        function openModal(productId) {
+            const product = productData[productId];
+            if (!product) return;
+            
+            const modal = document.getElementById('productModal');
+            const modalContent = document.getElementById('modalContent');
+            
+            modalContent.innerHTML = `
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <span style="font-size: 4rem; margin-bottom: 1rem; display: block;">${product.icon}</span>
+                    <h2 style="font-family: 'Orbitron', monospace; color: #00ffff; margin-bottom: 0.5rem;">${product.title}</h2>
+                    <span style="background: rgba(0,255,0,0.2); color: #00ff00; padding: 0.5rem 1rem; border-radius: 15px; font-size: 0.9rem;">${product.status}</span>
+                </div>
+                
+                <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem; opacity: 0.9;">${product.description}</p>
+                
+                <h3 style="color: #ff00ff; font-family: 'Orbitron', monospace; margin-bottom: 1rem;">Key Features</h3>
+                <ul style="margin-bottom: 2rem; padding-left: 1rem;">
+                    ${product.features.map(feature => `<li style="margin-bottom: 0.5rem; opacity: 0.9;">${feature}</li>`).join('')}
+                </ul>
+                
+                <h3 style="color: #ff00ff; font-family: 'Orbitron', monospace; margin-bottom: 1rem;">Applications</h3>
+                <ul style="margin-bottom: 2rem; padding-left: 1rem;">
+                    ${product.applications.map(app => `<li style="margin-bottom: 0.5rem; opacity: 0.9;">${app}</li>`).join('')}
+                </ul>
+                
+                <div style="background: rgba(0,255,255,0.1); padding: 1rem; border-radius: 10px; border: 1px solid rgba(0,255,255,0.3);">
+                    <h4 style="color: #00ffff; margin-bottom: 0.5rem;">Development Timeline</h4>
+                    <p style="opacity: 0.9;">${product.timeline}</p>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="contact.html" style="background: linear-gradient(45deg, #00ffff, #0099cc); color: #000000; text-decoration: none; padding: 1rem 2rem; border-radius: 25px; font-weight: 600; display: inline-block; margin-right: 1rem;">Get Involved</a>
+                    <button onclick="closeModal()" style="background: rgba(255,255,255,0.1); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); padding: 1rem 2rem; border-radius: 25px; cursor: pointer;">Close</button>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('productModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('productModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Initialize particles when page loads
+        document.addEventListener('DOMContentLoaded', createParticles);
+
+        // Add smooth hover effects
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
