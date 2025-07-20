@@ -99,3 +99,61 @@ document.addEventListener('DOMContentLoaded', () => {
     createParticles();
     glitchTitle();
 });
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Particle animation
+function createParticles() {
+    const particleContainer = document.querySelector('.particles');
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 6 + 's';
+        particleContainer.appendChild(particle);
+    }
+}
+
+// Navigation active state
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    let currentSection = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 200) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Initialize particles when page loads
+document.addEventListener('DOMContentLoaded', createParticles);
+
+// Chat toggle functionality
+document.querySelector('.chat-toggle').addEventListener('click', function() {
+    // Add your chat functionality here
+    alert('Chat feature coming soon! Contact us at hello@bioxbinary.in');
+});
