@@ -596,3 +596,212 @@ body {
         align-items: center;
     }
 }
+
+
+/* Additional styles for products section */
+.product-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.product-category {
+    background: rgba(0,0,0,0.3);
+    padding: 3rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: rgba(0,0,0,0.7);
+    border: 1px solid rgba(0,255,255,0.3);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product-card.assistive {
+    border-color: rgba(255,0,255,0.3);
+}
+
+.product-card.agri {
+    border-color: rgba(0,255,0,0.3);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,255,255,0.2);
+}
+
+.product-card.assistive:hover {
+    box-shadow: 0 10px 30px rgba(255,0,255,0.2);
+}
+
+.product-card.agri:hover {
+    box-shadow: 0 10px 30px rgba(0,255,0,0.2);
+}
+
+.product-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.product-card h4 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #00ffff;
+}
+
+.product-card.assistive h4 {
+    color: #ff00ff;
+}
+
+.product-card.agri h4 {
+    color: #00ff00;
+}
+
+.product-desc {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.product-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.product-features span {
+    background: rgba(0,255,255,0.2);
+    color: #ffffff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(0,255,255,0.3);
+}
+
+.product-card.assistive .product-features span {
+    background: rgba(255,0,255,0.2);
+    border-color: rgba(255,0,255,0.3);
+}
+
+.product-card.agri .product-features span {
+    background: rgba(0,255,0,0.2);
+    border-color: rgba(0,255,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-category {
+        padding: 2rem 1rem;
+    }
+}
+/* Product preview styles for home page */
+.product-overview {
+    background: rgba(0,0,0,0.3);
+    padding: 3rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.product-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-preview-card {
+    background: rgba(0,0,0,0.6);
+    border: 2px solid rgba(0,255,255,0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-preview-card.featured {
+    border-color: rgba(255,0,255,0.5);
+    background: rgba(255,0,255,0.1);
+}
+
+.product-preview-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,255,255,0.3);
+    border-color: #00ffff;
+}
+
+
+
+.product-preview-card.featured:hover {
+    box-shadow: 0 15px 40px rgba(255,0,255,0.4);
+    border-color: #ff00ff;
+}
+
+.preview-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-preview-card h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00ffff;
+}
+
+.product-preview-card.featured h3 {
+    color: #ff00ff;
+    text-shadow: 0 0 20px rgba(255,0,255,0.5);
+}
+
+.product-preview-card p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.preview-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.preview-examples span {
+    background: rgba(0,255,255,0.2);
+    color: #ffffff;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(0,255,255,0.3);
+}
+
+.product-preview-card.featured .preview-examples span {
+    background: rgba(255,0,255,0.2);
+    border-color: rgba(255,0,255,0.3);
+}
+
+@media (max-width: 768px) {
+    .product-preview-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-overview {
+        padding: 2rem 1rem;
+    }
+}
