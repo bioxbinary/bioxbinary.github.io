@@ -3,76 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Bioxbinary</title>
+    <title>About — Bioxbinary</title>
     <meta name="description" content="Learn about Bioxbinary's mission to merge AI and biotechnology to create assistive technologies and sustainable systems.">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="particles"></div>
-    <div class="neon-grid"></div>
-    
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo">BIOXBINARY</a>
+            <a href="index.html" class="logo">bioxbinary</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="index.html#divisions">Labs</a></li>
+                <li><a href="products.html">Work</a></li>
                 <li><a href="index.html#collaborate">Collaborate</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
         </div>
     </nav>
-    
+
     <div class="container">
-        <section id="about" class="section">
-            <h2 class="section-title">👁️‍🗨️ Mission Directive</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <strong>Initializing Protocol...</strong> At Bioxbinary, we stand at the nexus of digital innovation and biological mastery. Our directive is to fuse the logic of binary with the complexity of biology, forging technologies that not only serve humanity but elevate it to new paradigms of existence.
-                </div>
+        <section id="about" class="section" style="padding-top: 9rem;">
+            <div class="section-head reveal">
+                <span class="eyebrow">Mission</span>
+                <h2 class="section-title">Why this <em>exists</em></h2>
+            </div>
+            <div class="about-content reveal">
+                <p class="about-text">
+                    Bioxbinary is an independent lab I build in public — a place to pair the logic of
+                    binary with the complexity of biology, and to <strong>share what I learn along the way.</strong>
+                    It exists because this work feels worth doing, and worth giving away.
+                </p>
                 <ul class="mission-list">
-                    <li><strong>🩺 Assistive Technologies for Human Enhancement</strong><br>
-                        We engineer neural interfaces and intelligent mobility solutions, designed to restore autonomy and amplify human potential beyond current biological limitations.</li>
-                    <li><strong>🌱 Sustainable Systems for Planetary Symbiosis</strong><br>
-                        We architect AI-driven agricultural and hydroponic ecosystems, optimizing resource utilization to ensure global food security and ecological balance.</li>
-                    <li><strong>⚖️ Bioethics-Coded Intelligence</strong><br>
-                        We mandate that every line of code and every biological integration adheres to a strict ethical framework, safeguarding human dignity and preserving our shared environmental future.</li>
+                    <li>
+                        <strong>Assistive technologies for human enhancement</strong>
+                        Exploring neural interfaces and intelligent mobility — with the aim of restoring autonomy and amplifying human potential.
+                    </li>
+                    <li>
+                        <strong>Sustainable systems for the planet</strong>
+                        Exploring AI-driven agricultural and hydroponic systems that use resources wisely, in support of food security and ecological balance.
+                    </li>
+                    <li>
+                        <strong>Bioethics-coded intelligence</strong>
+                        Holding every line of code and every biological idea to an ethical standard that safeguards human dignity and a shared environment.
+                    </li>
                 </ul>
+            </div>
+
+            <div class="cta-buttons reveal" style="margin-top: 3rem;">
+                <a href="products.html" class="cta-button">See the experiments</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer" class="cta-button ghost">View the code</a>
             </div>
         </section>
     </div>
-    
+
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>⚙️ Quick Nav</h3>
-                <a href="index.html#about">/about</a>
-                <a href="index.html#divisions">/labs</a>
-                <a href="index.html#collaborate">/collaborate</a>
-                <a href="contact.html">/contact</a>
+            <div class="footer-brand">
+                <a href="index.html" class="logo">bioxbinary</a>
+                <p>Think Binary. Build Bio. Building at the intersection of AI and biotechnology.</p>
             </div>
             <div class="footer-section">
-                <h3>📡 Connect</h3>
-                <a href="#">🛰️ Research Portal</a>
-                <a href="#">💬 Developer API</a>
-                <a href="#">📊 Data Hub</a>
-                <a href="#">🔬 Lab Access</a>
+                <h3>Explore</h3>
+                <a href="about.html">About</a>
+                <a href="index.html#divisions">Labs</a>
+                <a href="products.html">Work</a>
+                <a href="index.html#collaborate">Collaborate</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>🌐 Network</h3>
+                <h3>Project</h3>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Contribute</a>
+                <a href="contact.html">Follow along</a>
+                <a href="about.html">Mission</a>
+            </div>
+            <div class="footer-section">
+                <h3>Network</h3>
                 <a href="#">LinkedIn</a>
                 <a href="#">GitHub</a>
-                <a href="#">Research Papers</a>
-                <a href="#">Patent Portfolio</a>
+                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://www.instagram.com/bioxbinary" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Bioxbinary Systems | Uplink Secure | Privacy Protocol Active</p>
+            <span>© 2026 Bioxbinary</span>
+            <span>Think Binary. Build Bio.</span>
         </div>
     </footer>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
