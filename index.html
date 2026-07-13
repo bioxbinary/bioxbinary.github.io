@@ -3,317 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bioxbinary - Think Binary. Build Bio.</title>
-    <meta name="description" content="Bioxbinary is a pioneering company at the intersection of AI and biotechnology, developing assistive technologies and sustainable systems for a better future.">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Bioxbinary — Think Binary. Build Bio.</title>
+    <meta name="description" content="Bioxbinary is a company at the intersection of AI and biotechnology, building assistive technologies and sustainable systems for a better future.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="particles"></div>
-    <div class="neon-grid"></div>
-    
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo">BIOXBINARY</a>
+            <a href="index.html" class="logo">bioxbinary</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#divisions">Labs</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#products">Work</a></li>
                 <li><a href="#collaborate">Collaborate</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
         </div>
     </nav>
-    
-    <div class="container">
-         <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">🧠 Think Binary. Build Bio.</h1>
-                <p class="hero-subtitle">Where code evolves into care. Where biology meets intelligence.</p>
-                <p class="hero-description">
-                    Pioneering the convergence of artificial intelligence and biotechnology to create 
-                    assistive technologies that enhance human potential and sustainable systems that 
-                    nurture our planet's future.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#divisions" class="cta-button">Explore Our Products</a>
-                    <a href="#collaborate" class="cta-button">Join Our Mission</a>
-                </div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content reveal">
+            <span class="hero-badge">An independent lab · built in the open</span>
+            <h1 class="hero-title">Think binary.<span class="accent">Build bio.</span></h1>
+            <p class="hero-subtitle">Where code evolves into care, and biology meets intelligence.</p>
+            <p class="hero-description">
+                Bioxbinary is an independent lab exploring where AI meets biotechnology — built in
+                public and shared freely. Just experiments, open code, and ideas, in the hope they're
+                useful to someone.
+            </p>
+            <div class="cta-buttons">
+                <a href="#products" class="cta-button">Explore the experiments</a>
+                <a href="about.html" class="cta-button ghost">What this is</a>
             </div>
-        </section>
-        <!-- Mission Section -->
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- About -->
         <section id="about" class="section">
-            <h2 class="section-title">🧬 About Bioxbinary</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <strong>Initiating: Mission Protocol...</strong>
-                </div>
-                <div class="about-text">
-                    At Bioxbinary, we stand at the intersection of digital innovation and biological understanding. 
-                    Our mission is to harness the power of binary logic and biological systems to create 
-                    technologies that don't just serve humanity—they elevate it.
-                </div>
+            <div class="section-head reveal">
+                <span class="eyebrow">About</span>
+                <h2 class="section-title">Where digital logic meets <em>living systems</em></h2>
+            </div>
+            <div class="about-content reveal">
+                <p class="about-text">
+                    A place to learn in the open — pairing binary logic with biological systems to build
+                    things that might <strong>genuinely help people,</strong> and to share how they work.
+                </p>
                 <ul class="mission-list">
                     <li>
-                        <strong>🧠 Human-Centered AI Systems</strong><br>
-                        Developing intelligent solutions that enhance human capabilities and improve quality of life through adaptive, responsive technology.
+                        <strong>Human-centered AI systems</strong>
+                        Intelligent solutions that enhance human capability and quality of life through adaptive, responsive technology.
                     </li>
                     <li>
-                        <strong>🌱 Smart Agriculture & Sustainable Environments</strong><br>
-                        Creating AI-powered systems that optimize resource usage and promote sustainable practices across agricultural and urban environments.
+                        <strong>Smart agriculture &amp; sustainable environments</strong>
+                        AI-powered systems that optimize resource usage and promote sustainable practices across agricultural and urban environments.
                     </li>
                     <li>
-                        <strong>🔧 Assistive Technologies for Health & Mobility</strong><br>
-                        Building next-generation assistive devices that restore independence and enhance accessibility for individuals with diverse needs.
+                        <strong>Assistive technologies for health &amp; mobility</strong>
+                        Next-generation assistive devices that restore independence and enhance accessibility for people with diverse needs.
                     </li>
                 </ul>
-                <div class="why-bioxbinary" style="margin-top: 3rem;">
-                    <h3 style="font-family: 'Orbitron', monospace; color: #00ffff; font-size: 2rem; margin-bottom: 2rem; text-align: center;">
-                      Why Choose Bioxbinary?
-                    </h3>
-                    <div style="
-                      display: grid;
-                      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                      gap: 2rem;
-                      padding: 0 1rem;
-                    ">
-                      <div style="
-                        text-align: center;
-                        padding: 2rem;
-                        background: linear-gradient(145deg, rgba(0,255,255,0.1), rgba(0,255,255,0.05));
-                        border-radius: 16px;
-                        box-shadow: 0 4px 20px rgba(0,255,255,0.2);
-                        backdrop-filter: blur(10px);
-                      ">
-                        <div style="font-size: 2.2rem; margin-bottom: 1rem;">🤖</div>
-                        <h4 style="color: #00ffff; margin-bottom: 1rem;">AI-First, Ethics-Driven</h4>
-                        <p style="color: #bff;">Built on responsible, forward-looking artificial intelligence principles.</p>
-                      </div>
-                  
-                      <div style="
-                        text-align: center;
-                        padding: 2rem;
-                        background: linear-gradient(145deg, rgba(255,0,255,0.1), rgba(255,0,255,0.05));
-                        border-radius: 16px;
-                        box-shadow: 0 4px 20px rgba(255,0,255,0.2);
-                        backdrop-filter: blur(10px);
-                      ">
-                        <div style="font-size: 2.2rem; margin-bottom: 1rem;">🔬</div>
-                        <h4 style="color: #ff00ff; margin-bottom: 1rem;">Deep Tech Innovation Labs</h4>
-                        <p style="color: #fbd;">Cutting-edge biotech research fueling futuristic breakthroughs.</p>
-                      </div>
-                  
-                      <div style="
-                        text-align: center;
-                        padding: 2rem;
-                        background: linear-gradient(145deg, rgba(0,255,0,0.1), rgba(0,255,0,0.05));
-                        border-radius: 16px;
-                        box-shadow: 0 4px 20px rgba(0,255,0,0.2);
-                        backdrop-filter: blur(10px);
-                      ">
-                        <div style="font-size: 2.2rem; margin-bottom: 1rem;">⚡</div>
-                        <h4 style="color: #00ff00; margin-bottom: 1rem;">Neuro-Inspired Design</h4>
-                        <p style="color: #cfc;">Products that think, adapt, and evolve with human intelligence.</p>
-                      </div>
+            </div>
+
+            <div class="reveal" style="margin-top: 5rem;">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="index-num">01</span>
+                        <h3>AI-first, ethics-driven</h3>
+                        <p>Built on responsible, forward-looking artificial intelligence principles.</p>
                     </div>
-                  </div>                  
+                    <div class="feature-card">
+                        <span class="index-num">02</span>
+                        <h3>Deep-tech innovation</h3>
+                        <p>Cutting-edge biotech research fuelling practical breakthroughs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="index-num">03</span>
+                        <h3>Neuro-inspired design</h3>
+                        <p>Products that think, adapt, and evolve alongside human intelligence.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <!-- Research Divisions -->
+
+        <!-- Research divisions -->
         <section id="divisions" class="section">
-            <h2 class="section-title">⚛️ Research Divisions</h2>
-            <div class="divisions">
-                <div class="division-card">
-                    <span class="division-icon">⚡</span>
-                    <h3 class="division-title">Edge AI Systems</h3>
-                    <p class="division-description">
-                        Intelligence at the source. We develop compact, energy-efficient AI systems that operate on-device—bringing real-time intelligence to the edge without compromise.
-                    </p>
-                    <div class="keywords">
-                        <span class="keyword">Sensor-driven Decision Making</span>
-                        <span class="keyword">Real-Time Anomaly Detection</span>
-                        <span class="keyword">Predictive Edge Models</span>
-                        <span class="keyword">Secure Wireless & Embedded Logic</span>
+            <div class="section-head reveal">
+                <span class="eyebrow">Labs</span>
+                <h2 class="section-title">Research divisions</h2>
+            </div>
+            <div class="index-list">
+                <div class="index-item reveal">
+                    <span class="index-num">01</span>
+                    <div>
+                        <h3>Edge AI Systems</h3>
+                        <p>Intelligence at the source. Compact, energy-efficient AI that runs on-device — bringing real-time decisions to the edge without compromise.</p>
+                        <div class="keywords">
+                            <span class="keyword">Sensor-driven decisions</span>
+                            <span class="keyword">Real-time anomaly detection</span>
+                            <span class="keyword">Predictive edge models</span>
+                            <span class="keyword">Secure embedded logic</span>
+                        </div>
+                        <a href="#products" class="enter-lab">Explore Edge AI →</a>
                     </div>
-                    <a href="#products" class="enter-lab">Explore Edge AI Products</a>
                 </div>
 
-                <div class="division-card">
-                    <span class="division-icon">🧠</span>
-                    <h3 class="division-title">Assistive HealthTech</h3>
-                    <p class="division-description">
-                        AI that restores, enhances, and empowers. Next-gen assistive technologies designed to restore mobility, enhance communication, and improve lives—especially for underserved communities.
-                    </p>
-                    <div class="keywords">
-                        <span class="keyword">Brain-Computer Interfaces</span>
-                        <span class="keyword">Smart Mobility Aids</span>
-                        <span class="keyword">Sensory Augmentation Devices</span>
-                        <span class="keyword">Neuro-Adaptive Systems</span>
+                <div class="index-item reveal">
+                    <span class="index-num">02</span>
+                    <div>
+                        <h3>Assistive HealthTech</h3>
+                        <p>AI that restores, enhances, and empowers — designed to restore mobility, improve communication, and improve lives, especially for underserved communities.</p>
+                        <div class="keywords">
+                            <span class="keyword">Brain-computer interfaces</span>
+                            <span class="keyword">Smart mobility aids</span>
+                            <span class="keyword">Sensory augmentation</span>
+                            <span class="keyword">Neuro-adaptive systems</span>
+                        </div>
+                        <a href="#products" class="enter-lab">Explore HealthTech →</a>
                     </div>
-                    <a href="#products" class="enter-lab">Explore HealthTech Products</a>
                 </div>
 
-                <div class="division-card">
-                    <span class="division-icon">🌱</span>
-                    <h3 class="division-title">AgriTech & Hydroponics</h3>
-                    <p class="division-description">
-                        Grow smarter. Sustain longer. Reinventing agriculture through AI-augmented farming, autonomous hydroponics, and precision environmental systems.
-                    </p>
-                    <div class="keywords">
-                        <span class="keyword">AI-Irrigation & Nutrient Delivery</span>
-                        <span class="keyword">Climate-Adaptive Hydroponics</span>
-                        <span class="keyword">Multi-Sensor Farm Networks</span>
-                        <span class="keyword">Sustainable Resource Management</span>
+                <div class="index-item reveal">
+                    <span class="index-num">03</span>
+                    <div>
+                        <h3>AgriTech &amp; Hydroponics</h3>
+                        <p>Grow smarter, sustain longer. Reinventing agriculture through AI-augmented farming, autonomous hydroponics, and precision environmental systems.</p>
+                        <div class="keywords">
+                            <span class="keyword">AI irrigation &amp; nutrients</span>
+                            <span class="keyword">Climate-adaptive hydroponics</span>
+                            <span class="keyword">Multi-sensor farm networks</span>
+                            <span class="keyword">Sustainable resource use</span>
+                        </div>
+                        <a href="#products" class="enter-lab">Explore AgriTech →</a>
                     </div>
-                    <a href="#products" class="enter-lab">Explore AgriTech Products</a>
                 </div>
 
-                <div class="division-card">
-                    <span class="division-icon">⚖️</span>
-                    <h3 class="division-title">Bioethics-Coded Intelligence</h3>
-                    <p class="division-description">
-                        AI guided by conscience. We embed ethical reasoning into every decision tree, ensuring our technologies enhance dignity, inclusivity, and ecological balance.
-                    </p>
-                    <div class="keywords">
-                        <span class="keyword">Transparency & Trust</span>
-                        <span class="keyword">Privacy by Design</span>
-                        <span class="keyword">Open Collaboration</span>
-                        <span class="keyword">Responsible Innovation</span>
+                <div class="index-item reveal">
+                    <span class="index-num">04</span>
+                    <div>
+                        <h3>Bioethics-Coded Intelligence</h3>
+                        <p>AI guided by conscience — ethical reasoning embedded in every decision, so the technology enhances dignity, inclusivity, and ecological balance.</p>
+                        <div class="keywords">
+                            <span class="keyword">Transparency &amp; trust</span>
+                            <span class="keyword">Privacy by design</span>
+                            <span class="keyword">Open collaboration</span>
+                            <span class="keyword">Responsible innovation</span>
+                        </div>
+                        <a href="about.html" class="enter-lab">The ethics framework →</a>
                     </div>
-                    <a href="#about" class="enter-lab">Read Our Ethics Framework</a>
                 </div>
             </div>
         </section>
 
-        
-        <!-- Products Overview Section -->
+        <!-- Products -->
         <section id="products" class="section">
-            <h2 class="section-title">🚀 Our Product Focus</h2>
-            <div class="product-overview">
-                <div class="product-preview-grid">
-                    <a href="products.html#healthtech" class="product-preview-card" style="text-decoration: none; color: inherit;">
-                        <div class="preview-icon">🧠</div>
-                        <h3>Neuralink Bridge X1</h3>
-                        <p>A next-generation brain-computer interface enabling direct neural control of digital devices, featuring ultra-low latency signal processing.</p>
-                    </a>
-                    
-                    <a href="products.html#healthtech" class="product-preview-card featured" style="text-decoration: none; color: inherit;">
-                        <div class="preview-icon">💊</div>
-                        <h3>DoseXTrack</h3>
-                        <p>An AI-powered platform for tracking and optimizing medication dosage, ensuring patient safety and efficacy.</p>
-                    </a>
-                    
-                    <a href="products.html#agritech" class="product-preview-card" style="text-decoration: none; color: inherit;">
-                        <div class="preview-icon">💧</div>
-                        <h3>HydroMind Controller</h3>
-                        <p>An intelligent hydroponics system that uses AI to monitor plant health and automatically adjust nutrients, pH, and lighting.</p>
-                    </a>
-                </div>
-                
-                <div class="product-cta" style="text-align: center; margin-top: 3rem;">
-                    <a href="products.html" class="cta-button" style="font-size: 1.2rem; padding: 1.2rem 2.5rem;">
-                        Explore All Products & Prototypes
-                    </a>
-                </div>
+            <div class="section-head reveal">
+                <span class="eyebrow">Experiments</span>
+                <h2 class="section-title">What's being explored</h2>
+                <p class="section-lead">A few of the ideas in progress across health, agriculture, and the edge. Some are built and open-source; most are still concepts.</p>
+            </div>
+            <div class="product-preview-grid">
+                <a href="products.html#healthtech" class="product-preview-card reveal">
+                    <span class="index-num">01</span>
+                    <h3>NeuraLink Bridge X1</h3>
+                    <p>A next-generation brain-computer interface enabling direct neural control of digital devices, with ultra-low-latency signal processing.</p>
+                </a>
+                <a href="products.html#healthtech" class="product-preview-card featured reveal">
+                    <span class="index-num">02</span>
+                    <h3>DoseXTrack</h3>
+                    <p>An AI-powered platform for tracking and optimizing medication dosage — keeping patients safe and treatment effective.</p>
+                </a>
+                <a href="products.html#agritech" class="product-preview-card reveal">
+                    <span class="index-num">03</span>
+                    <h3>HydroMind Controller</h3>
+                    <p>An intelligent hydroponics system that uses AI to monitor plant health and adjust nutrients, pH, and lighting automatically.</p>
+                </a>
+            </div>
+            <div class="cta-buttons reveal" style="margin-top: 3rem;">
+                <a href="products.html" class="cta-button">Explore all experiments</a>
             </div>
         </section>
-        
-        <!-- collabrate section -->
-        <section id="collaborate" class="collaborate">
-            <h2 class="collaborate-title">🤝 Let's Build the Future Together</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
-                We welcome researchers, engineers, investors, and mission-aligned partners to pilot, co-develop, or deploy Bioxbinary systems.
+    </div>
+
+    <!-- Collaborate -->
+    <section id="collaborate" class="collaborate">
+        <div class="section-head reveal">
+            <span class="eyebrow">Get involved</span>
+            <h2 class="collaborate-title">Build it with me</h2>
+            <p class="section-lead">
+                No funding rounds, no sales calls — just open work. If any of this is useful to you, or
+                you'd like to help shape it, you're welcome here.
             </p>
-            
-            <div class="collaboration-opportunities" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-                <div style="background: rgba(0,255,255,0.1); padding: 2rem; border-radius: 10px; border: 1px solid rgba(0,255,255,0.3);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
-                    <h3 style="color: #00ffff; margin-bottom: 1rem;">Fund a Prototype</h3>
-                    <p>Invest in breakthrough AI technologies that will shape the future of assistive healthcare and edge computing.</p>
-                </div>
-                
-                <div style="background: rgba(255,0,255,0.1); padding: 2rem; border-radius: 10px; border: 1px solid rgba(255,0,255,0.3);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
-                    <h3 style="color: #ff00ff; margin-bottom: 1rem;">Pilot Deployment</h3>
-                    <p>Test our solutions in real-world environments and help us refine our products for maximum impact.</p>
-                </div>
-                
-                <div style="background: rgba(0,255,0,0.1); padding: 2rem; border-radius: 10px; border: 1px solid rgba(0,255,0,0.3);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
-                    <h3 style="color: #00ff00; margin-bottom: 1rem;">Contribute Research</h3>
-                    <p>Join our research community and contribute to open-source projects that advance AI for social good.</p>
-                </div>
+        </div>
+
+        <div class="collaboration-opportunities">
+            <div class="card reveal">
+                <span class="index-num">01</span>
+                <h3>Contribute on GitHub</h3>
+                <p>Read the code, open an issue, or send a pull request. Everything that's built lives in the open.</p>
             </div>
-            
-            <div class="collaborate-options">
-                <a href="contact.html" class="collaborate-option">Start Collaboration</a>
-                <a href="contact.html" class="collaborate-option">Request Demo</a>
-                <a href="contact.html" class="collaborate-option">Join Research</a>
+            <div class="card reveal">
+                <span class="index-num">02</span>
+                <h3>Share ideas &amp; feedback</h3>
+                <p>Tell me what would actually be useful — your input helps decide what gets built next.</p>
             </div>
-        </section>
-        <!-- <section id="collaborate" class="section">
-            <div class="collaborate">
-                <h2 class="collaborate-title">🤝 Mission Briefing: Collaboration</h2>
-                <p style="margin-bottom: 2rem; font-size: 1.1rem;">
-                    <strong>Incoming Transmission: Partnerships, Pilots, Volunteers...</strong>
-                </p>
-                <p style="margin-bottom: 2rem; line-height: 1.6;">
-                    Join us in pushing the boundaries of what's possible. Whether you're a researcher, 
-                    investor, or organization ready to pilot cutting-edge solutions, we're looking for 
-                    collaborators who share our vision of a technologically-enhanced, sustainable future.
-                </p>
-                <div class="collaborate-options">
-                    <a href="#" class="collaborate-option">Fund a Prototype</a>
-                    <a href="#" class="collaborate-option">Pilot a Product</a>
-                    <a href="#" class="collaborate-option">Join Our Research</a>
-                </div>
+            <div class="card reveal">
+                <span class="index-num">03</span>
+                <h3>Follow along</h3>
+                <p>Get the occasional update as experiments grow, succeed, or fail out loud.</p>
             </div>
-        </section> -->
-    </div>
-    
-    <!-- Chat Toggle Button -->
-    <div class="chat-toggle">
-        <span style="color: white; font-size: 1.5rem;">💬</span>
-    </div>
+        </div>
+
+        <div class="collaborate-options reveal">
+            <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer" class="cta-button">View the code</a>
+            <a href="contact.html" class="cta-button ghost">Say hello</a>
+        </div>
+    </section>
+
+    <div class="chat-toggle" role="button" aria-label="Open chat"><span>✦</span></div>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>⚙️ Quick Nav</h3>
-                <a href="about.html">/about</a>
-                <a href="#divisions">/labs</a>
-                <a href="#products">/products</a>
-                <a href="#collaborate">/collaborate</a>
-                <a href="contact.html">/contact</a>
+            <div class="footer-brand">
+                <a href="index.html" class="logo">bioxbinary</a>
+                <p>Think binary. Build bio.</p>
             </div>
             <div class="footer-section">
-                <h3>📡 Connect</h3>
-                <a href="#">🛰️ Research Portal</a>
-                <a href="#">💬 Developer API</a>
-                <a href="#">📊 Data Hub</a>
-                <a href="#">🔬 Lab Access</a>
+                <h3>Explore</h3>
+                <a href="about.html">About</a>
+                <a href="#divisions">Labs</a>
+                <a href="#products">Work</a>
+                <a href="#collaborate">Collaborate</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>🌐 Network</h3>
+                <h3>Project</h3>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Contribute</a>
+                <a href="contact.html">Follow along</a>
+                <a href="about.html">Mission</a>
+            </div>
+            <div class="footer-section">
+                <h3>Network</h3>
                 <a href="#">LinkedIn</a>
                 <a href="#">GitHub</a>
-                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>                  
-                <a href="https://www.instagram.com/bioxbinary" target="_blank" rel="noopener noreferrer">Instagram</a>   
-                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X</a>  
+                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://www.instagram.com/bioxbinary" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Bioxbinary Systems | Think Binary. Build Bio. | Privacy Protocol Active</p>
+            <span>© 2026 Bioxbinary</span>
+            <span>Think binary. Build bio.</span>
         </div>
     </footer>
-    
-    <div class="chat-toggle">
-        <span style="font-size: 1.5rem;">💬</span>
-    </div>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
