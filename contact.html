@@ -4,22 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Bioxbinary</title>
-    <meta name="description" content="Get in touch with Bioxbinary to discuss collaborations, ask questions, or explore new ideas in AI and biotechnology.">
+    <meta name="description" content="Get in touch with Bioxbinary to discuss open-source hardware, assistive technologies, or collaborative research.">
+    <meta name="theme-color" content="#07090a">
+
+    <!-- OpenGraph & Twitter Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bioxbinary.in/contact.html">
+    <meta property="og:title" content="Contact — Bioxbinary">
+    <meta property="og:description" content="Reach out to discuss open-source hardware, assistive technologies, or research collaboration.">
+    <meta property="og:image" content="https://www.bioxbinary.in/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bioxbinary logo — Think binary. Build bio.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact — Bioxbinary">
+    <meta name="twitter:description" content="Connect with Bioxbinary.">
+    <meta name="twitter:image" content="https://www.bioxbinary.in/assets/images/og-image.png">
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/favicon.ico?v=2" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=2">
+    <link rel="manifest" href="site.webmanifest?v=2">
+
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo">bioxbinary</a>
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
+                <div class="lab-status">
+                    <span>Independent Lab</span>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="index.html#divisions">Labs</a></li>
-                <li><a href="products.html">Work</a></li>
-                <li><a href="index.html#collaborate">Collaborate</a></li>
+                <li><a href="index.html#hardware">Builds</a></li>
+                <li><a href="index.html#architecture">Architecture</a></li>
+                <li><a href="products.html">Experiments</a></li>
+                <li><a href="index.html#dispatches">Notes</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation">
@@ -29,19 +60,30 @@
     </nav>
 
     <div class="container">
-        <section id="contact" class="section" style="padding-top: 9rem;">
+        <section id="contact" class="section" style="padding-top: 9.5rem;">
             <div class="section-head center reveal">
-                <span class="eyebrow">Contact</span>
+                <span class="eyebrow">Direct Dispatch</span>
                 <h2 class="section-title">Let's start a conversation</h2>
-                <p class="section-lead">Questions, collaborations, or new ideas — tell me what you have in mind and I'll get back to you.</p>
+                <p class="section-lead">
+                    Questions, research collaborations, hardware feedback, or new ideas — tell us what you have in mind and we will get back to you shortly.
+                </p>
             </div>
+
             <div class="contact-content reveal" style="margin: 0 auto;">
+                <!-- Quick Topic Selector -->
+                <div class="topic-selector">
+                    <button type="button" class="topic-chip active" data-topic="Assistive Technology &amp; DoseXTrack">Assistive Tech</button>
+                    <button type="button" class="topic-chip" data-topic="Firmware &amp; Hardware Feedback">Hardware / Firmware</button>
+                    <button type="button" class="topic-chip" data-topic="Open-Source Collaboration">Open-Source Collaboration</button>
+                    <button type="button" class="topic-chip" data-topic="Research Partnerships">Research Partnerships</button>
+                </div>
+
                 <form action="https://formsubmit.co/ab3d3a00b17303adb3a61ff57777c2c6" method="POST">
-                    <!-- Honeypot for bots -->
+                    <!-- Anti-bot honeypot -->
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_captcha" value="false">
-                    <!-- Redirect to custom thank-you page -->
-                    <input type="hidden" name="_next" value="https://bioxbinary.github.io/thankyou.html">
+                    <!-- Redirect to custom thank you page -->
+                    <input type="hidden" name="_next" value="https://www.bioxbinary.in/thankyou.html">
 
                     <div class="form-group">
                         <label for="name" class="form-label">Name</label>
@@ -53,11 +95,11 @@
                     </div>
                     <div class="form-group">
                         <label for="subject" class="form-label">Subject</label>
-                        <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                        <input type="text" id="subject" name="subject" class="form-input" value="Assistive Technology &amp; DoseXTrack" required>
                     </div>
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" class="form-textarea" placeholder="Tell me more…" required></textarea>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Tell us more about your inquiry or project..." required></textarea>
                     </div>
                     <button type="submit" class="submit-button">Send message</button>
                 </form>
@@ -65,39 +107,66 @@
         </section>
     </div>
 
+    <!-- Interactive Floating Trigger -->
+    <div class="chat-toggle" role="button" aria-label="Open AI Lab Terminal" title="Open AI Lab Terminal">
+        <span>✦</span>
+    </div>
+
+    <!-- Interactive AI Lab Terminal Drawer -->
+    <aside class="terminal-drawer" id="terminalDrawer" aria-label="Lab Assistant Terminal">
+        <div class="terminal-topbar">
+            <div class="terminal-title">
+                <span class="pulse-dot"></span>
+                <span>Bioxbinary AI Lab Agent</span>
+            </div>
+            <button class="terminal-close-btn" id="terminalCloseBtn" aria-label="Close terminal">&times;</button>
+        </div>
+        <div class="terminal-conversation" id="terminalConversation">
+            <div class="terminal-msg bot">
+                Hello. If you have immediate technical questions before sending a message, feel free to ask here.
+                <div class="terminal-quick-prompts">
+                    <button class="quick-chip" data-prompt="What is DoseXTrack?">DoseXTrack?</button>
+                    <button class="quick-chip" data-prompt="How can I collaborate?">Collaboration?</button>
+                </div>
+            </div>
+        </div>
+        <div class="terminal-input-bar">
+            <input type="text" class="terminal-input" id="terminalInput" placeholder="Quick question..." autocomplete="off">
+            <button class="terminal-send-btn" id="terminalSendBtn">Send</button>
+        </div>
+    </aside>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo">bioxbinary</a>
-                <p>Think Binary. Build Bio. Building at the intersection of AI and biotechnology.</p>
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
+                <p>Think binary. Build bio.</p>
             </div>
             <div class="footer-section">
                 <h3>Explore</h3>
                 <a href="about.html">About</a>
-                <a href="index.html#divisions">Labs</a>
-                <a href="products.html">Work</a>
-                <a href="index.html#collaborate">Collaborate</a>
+                <a href="index.html#hardware">Builds</a>
+                <a href="index.html#architecture">Architecture</a>
+                <a href="products.html">Experiments</a>
                 <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>Project</h3>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Contribute</a>
-                <a href="contact.html">Follow along</a>
-                <a href="about.html">Mission</a>
+                <h3>Open Source</h3>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Repositories</a>
+                <a href="about.html">Ethics &amp; Privacy</a>
             </div>
             <div class="footer-section">
                 <h3>Network</h3>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X (@bioxbinary)</a>
                 <a href="https://www.instagram.com/bioxbinary" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© 2026 Bioxbinary</span>
-            <span>Think Binary. Build Bio.</span>
+            <span>© 2026 Bioxbinary · Independent Lab</span>
+            <span>Direct dispatch · Inquiries processed rapidly</span>
         </div>
     </footer>
 

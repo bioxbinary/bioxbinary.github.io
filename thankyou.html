@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Received — Bioxbinary</title>
-    <meta name="description" content="Your message has been sent to Bioxbinary. I'll be in touch shortly.">
+    <meta name="description" content="Your message has been dispatched to Bioxbinary. We will be in touch shortly.">
+    <meta name="theme-color" content="#07090a">
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/favicon.ico?v=2" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=2">
+    <link rel="manifest" href="site.webmanifest?v=2">
+
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo">bioxbinary</a>
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
+                <div class="lab-status">
+                    <span>Independent Lab</span>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="index.html#divisions">Labs</a></li>
-                <li><a href="products.html">Work</a></li>
-                <li><a href="index.html#collaborate">Collaborate</a></li>
+                <li><a href="index.html#hardware">Builds</a></li>
+                <li><a href="index.html#architecture">Architecture</a></li>
+                <li><a href="products.html">Experiments</a></li>
+                <li><a href="index.html#dispatches">Notes</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation">
@@ -31,51 +48,75 @@
     <div class="container">
         <section class="section" style="padding-top: 10rem; text-align: center; min-height: 70vh;">
             <div class="section-head center reveal" style="margin: 0 auto;">
-                <span class="eyebrow">Message received</span>
+                <span class="eyebrow">Dispatch Confirmed</span>
                 <h2 class="section-title">Thanks for <em>reaching out</em></h2>
                 <p class="section-lead">
-                    Your message has been sent securely. I'll read it and reply soon.
+                    Your message has reached our lab inbox, and we will get back to you shortly.
                 </p>
-                <div class="cta-buttons" style="justify-content: center;">
+                <div class="cta-buttons" style="justify-content: center; margin-top: 2.5rem;">
                     <a href="index.html" class="cta-button">← Back to home</a>
+                    <a href="products.html" class="cta-button ghost">Explore active builds</a>
                 </div>
             </div>
         </section>
     </div>
 
+    <!-- Interactive Floating Trigger -->
+    <div class="chat-toggle" role="button" aria-label="Open AI Lab Terminal" title="Open AI Lab Terminal">
+        <span>✦</span>
+    </div>
+
+    <!-- Interactive AI Lab Terminal Drawer -->
+    <aside class="terminal-drawer" id="terminalDrawer" aria-label="Lab Assistant Terminal">
+        <div class="terminal-topbar">
+            <div class="terminal-title">
+                <span class="pulse-dot"></span>
+                <span>Bioxbinary AI Lab Agent</span>
+            </div>
+            <button class="terminal-close-btn" id="terminalCloseBtn" aria-label="Close terminal">&times;</button>
+        </div>
+        <div class="terminal-conversation" id="terminalConversation">
+            <div class="terminal-msg bot">
+                Your message has been received! Feel free to query our technical architecture while you are here.
+            </div>
+        </div>
+        <div class="terminal-input-bar">
+            <input type="text" class="terminal-input" id="terminalInput" placeholder="Query lab architecture..." autocomplete="off">
+            <button class="terminal-send-btn" id="terminalSendBtn">Send</button>
+        </div>
+    </aside>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo">bioxbinary</a>
-                <p>Think Binary. Build Bio. Building at the intersection of AI and biotechnology.</p>
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
+                <p>Think binary. Build bio.</p>
             </div>
             <div class="footer-section">
                 <h3>Explore</h3>
                 <a href="about.html">About</a>
-                <a href="index.html#divisions">Labs</a>
-                <a href="products.html">Work</a>
-                <a href="index.html#collaborate">Collaborate</a>
+                <a href="index.html#hardware">Builds</a>
+                <a href="index.html#architecture">Architecture</a>
+                <a href="products.html">Experiments</a>
                 <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>Project</h3>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Contribute</a>
-                <a href="contact.html">Follow along</a>
-                <a href="about.html">Mission</a>
+                <h3>Open Source</h3>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Repositories</a>
+                <a href="about.html">Ethics &amp; Privacy</a>
             </div>
             <div class="footer-section">
                 <h3>Network</h3>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X (@bioxbinary)</a>
                 <a href="https://www.instagram.com/bioxbinary" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© 2026 Bioxbinary</span>
-            <span>Think Binary. Build Bio.</span>
+            <span>© 2026 Bioxbinary · Independent Lab</span>
+            <span>Think binary. Build bio.</span>
         </div>
     </footer>
 

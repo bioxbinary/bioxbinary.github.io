@@ -4,22 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioxbinary — Think Binary. Build Bio.</title>
-    <meta name="description" content="Bioxbinary is a company at the intersection of AI and biotechnology, building assistive technologies and sustainable systems for a better future.">
+    <meta name="description" content="Bioxbinary is an independent lab exploring the intersection of AI, edge computing, and assistive biotechnology, with hardware, firmware, and research shared openly.">
+    <meta name="theme-color" content="#07090a">
+
+    <!-- OpenGraph & Twitter Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bioxbinary.in/">
+    <meta property="og:title" content="Bioxbinary — Think Binary. Build Bio.">
+    <meta property="og:description" content="Where code evolves into care, and biology meets intelligence. An independent lab building assistive technology and edge systems.">
+    <meta property="og:image" content="https://www.bioxbinary.in/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bioxbinary logo — Think binary. Build bio.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bioxbinary — Think Binary. Build Bio.">
+    <meta name="twitter:description" content="Where code evolves into care, and biology meets intelligence. An independent lab for AI × assistive tech.">
+    <meta name="twitter:image" content="https://www.bioxbinary.in/assets/images/og-image.png">
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/favicon.ico?v=2" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=2">
+    <link rel="manifest" href="site.webmanifest?v=2">
+
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Top Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo">bioxbinary</a>
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
+                <div class="lab-status">
+                    <span>Independent Lab</span>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="#hardware">Builds</a></li>
+                <li><a href="#architecture">Architecture</a></li>
                 <li><a href="#divisions">Labs</a></li>
-                <li><a href="#products">Work</a></li>
-                <li><a href="#collaborate">Collaborate</a></li>
+                <li><a href="#dispatches">Notes</a></li>
+                <li><a href="products.html">Experiments</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation">
@@ -28,242 +61,432 @@
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero Section with Live Telemetry Console -->
     <header class="hero">
-        <div class="hero-content reveal">
-            <span class="hero-badge">An independent lab · built in the open</span>
-            <h1 class="hero-title">Think binary.<span class="accent">Build bio.</span></h1>
-            <p class="hero-subtitle">Where code evolves into care, and biology meets intelligence.</p>
-            <p class="hero-description">
-                Bioxbinary is an independent lab exploring where AI meets biotechnology — built in
-                public and shared freely. Just experiments, open code, and ideas, in the hope they're
-                useful to someone.
-            </p>
-            <div class="cta-buttons">
-                <a href="#products" class="cta-button">Explore the experiments</a>
-                <a href="about.html" class="cta-button ghost">What this is</a>
+        <div class="hero-backdrop" aria-hidden="true">
+            <canvas class="binary-rain"></canvas>
+            <span class="hero-orb hero-orb--gold"></span>
+            <span class="hero-orb hero-orb--bio"></span>
+        </div>
+        <div class="hero-grid">
+            <div class="hero-content reveal">
+                <span class="hero-badge">Independent Lab · AI × Assistive Tech</span>
+                <h1 class="hero-title">Think binary.<span class="accent">Build bio.</span></h1>
+                <p class="hero-subtitle">Where code evolves into care, and biology meets intelligence.</p>
+                <p class="hero-description">
+                    Bioxbinary is an independent lab exploring the frontier where AI and edge computing
+                    meet assistive technology. We build real hardware and share the firmware, local-first protocols,
+                    and research notes openly.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#hardware" class="cta-button">Inspect the builds</a>
+                    <a href="#" class="cta-button ghost open-terminal-trigger">Ask the lab AI</a>
+                </div>
+                <ul class="hero-points">
+                    <li>Open-source firmware</li>
+                    <li>Local-first by design</li>
+                    <li>No cloud lock-in</li>
+                </ul>
+            </div>
+
+            <!-- Live Telemetry Simulator -->
+            <div class="telemetry-console reveal">
+                <div class="telemetry-header">
+                    <div class="telemetry-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span>Edge Telemetry Feed</span>
+                </div>
+                <div class="telemetry-body" id="telemetryBody">
+                    <!-- Populated dynamically via script.js -->
+                </div>
+                <div class="telemetry-status-bar">
+                    <span class="telemetry-ping">
+                        <span class="pulse-dot"></span>
+                        MQTT WS: Connected (14ms)
+                    </span>
+                    <button class="telemetry-pause-btn" id="telemetryPauseBtn">Pause</button>
+                </div>
             </div>
         </div>
     </header>
 
+    <!-- Tech Stack Marquee -->
+    <div class="stack-marquee" aria-label="Technologies used in the lab">
+        <div class="stack-track">
+            <ul class="stack-list">
+                <li>ESP32</li>
+                <li>ESP-IDF</li>
+                <li>FreeRTOS</li>
+                <li>Mosquitto MQTT</li>
+                <li>WebSockets</li>
+                <li>C / C++</li>
+                <li>Edge ML</li>
+                <li>I2C · SPI</li>
+                <li>PETG 3D Printing</li>
+                <li>Vanilla JS</li>
+            </ul>
+            <ul class="stack-list" aria-hidden="true">
+                <li>ESP32</li>
+                <li>ESP-IDF</li>
+                <li>FreeRTOS</li>
+                <li>Mosquitto MQTT</li>
+                <li>WebSockets</li>
+                <li>C / C++</li>
+                <li>Edge ML</li>
+                <li>I2C · SPI</li>
+                <li>PETG 3D Printing</li>
+                <li>Vanilla JS</li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container">
-        <!-- About -->
-        <section id="about" class="section">
+        <!-- Featured Build / Hardware Showcase -->
+        <section id="hardware" class="section">
             <div class="section-head reveal">
-                <span class="eyebrow">About</span>
-                <h2 class="section-title">Where digital logic meets <em>living systems</em></h2>
-            </div>
-            <div class="about-content reveal">
-                <p class="about-text">
-                    A place to learn in the open — pairing binary logic with biological systems to build
-                    things that might <strong>genuinely help people,</strong> and to share how they work.
+                <span class="eyebrow">Physical Builds</span>
+                <h2 class="section-title">Hardware in the <em>open</em></h2>
+                <p class="section-lead">
+                    Tangible, open-source assistive devices engineered for local-first reliability. No cloud lock-in, zero subscription gates.
                 </p>
-                <ul class="mission-list">
-                    <li>
-                        <strong>Human-centered AI systems</strong>
-                        Intelligent solutions that enhance human capability and quality of life through adaptive, responsive technology.
-                    </li>
-                    <li>
-                        <strong>Smart agriculture &amp; sustainable environments</strong>
-                        AI-powered systems that optimize resource usage and promote sustainable practices across agricultural and urban environments.
-                    </li>
-                    <li>
-                        <strong>Assistive technologies for health &amp; mobility</strong>
-                        Next-generation assistive devices that restore independence and enhance accessibility for people with diverse needs.
-                    </li>
-                </ul>
             </div>
 
-            <div class="reveal" style="margin-top: 5rem;">
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <span class="index-num">01</span>
-                        <h3>AI-first, ethics-driven</h3>
-                        <p>Built on responsible, forward-looking artificial intelligence principles.</p>
+            <div class="hardware-spotlight reveal">
+                <div class="hardware-visual-pane">
+                    <span class="hardware-badge">Working Build · Hardware v1.2</span>
+                    <div class="hardware-img-container">
+                        <img src="assets/images/DoseXTrack.png" alt="DoseXTrack dispenser with four pill compartments, a display showing the next dose time, and a confirm button" loading="lazy">
                     </div>
-                    <div class="feature-card">
-                        <span class="index-num">02</span>
-                        <h3>Deep-tech innovation</h3>
-                        <p>Cutting-edge biotech research fuelling practical breakthroughs.</p>
+                </div>
+
+                <div class="hardware-info-pane">
+                    <div class="hardware-title-row">
+                        <h3>DoseXTrack</h3>
+                        <span class="hardware-tag">● Working Prototype</span>
                     </div>
-                    <div class="feature-card">
-                        <span class="index-num">03</span>
-                        <h3>Neuro-inspired design</h3>
-                        <p>Products that think, adapt, and evolve alongside human intelligence.</p>
+                    <p class="hardware-desc">
+                        A smart medication-monitoring system pairing an ESP32-driven dispenser with a real-time web dashboard over MQTT. Designed to grant independence to individuals managing strict schedules while giving caregivers verifiable peace of mind.
+                    </p>
+
+                    <div class="hardware-specs-tabs">
+                        <button class="hardware-tab-btn active" data-tab="tab-overview">Overview</button>
+                        <button class="hardware-tab-btn" data-tab="tab-firmware">Firmware Stack</button>
+                        <button class="hardware-tab-btn" data-tab="tab-protocol">MQTT Protocol</button>
+                        <button class="hardware-tab-btn" data-tab="tab-bom">Hardware BOM</button>
+                    </div>
+
+                    <div class="hardware-tab-content">
+                        <div class="hardware-tab-panel active" id="tab-overview">
+                            <ul>
+                                <li>Real-time medication adherence tracking</li>
+                                <li>Audible & visual multi-stage reminders</li>
+                                <li>Physical tactile dispense confirmation button</li>
+                                <li>Local-first telemetry over Mosquitto MQTT</li>
+                            </ul>
+                        </div>
+                        <div class="hardware-tab-panel" id="tab-firmware">
+                            <ul>
+                                <li>C/C++ firmware built on ESP-IDF & FreeRTOS</li>
+                                <li>Hardware timer & RTC clock sync via NTP</li>
+                                <li>Non-blocking asynchronous event loop</li>
+                                <li>Fail-safe local EEPROM dose queue storage</li>
+                            </ul>
+                        </div>
+                        <div class="hardware-tab-panel" id="tab-protocol">
+                            <ul>
+                                <li>Lightweight pub/sub messaging via QoS 1</li>
+                                <li>WebSocket bridge to web-based dashboard</li>
+                                <li>Standardized JSON event payload schema</li>
+                                <li>Sub-20ms round-trip latency on local Wi-Fi</li>
+                            </ul>
+                        </div>
+                        <div class="hardware-tab-panel" id="tab-bom">
+                            <ul>
+                                <li>ESP32-WROOM-32 microcontroller</li>
+                                <li>Micro-servo mechanical gate actuator</li>
+                                <li>0.96" I2C OLED status screen & status LEDs</li>
+                                <li>Custom 3D-printable PETG housing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hardware-actions">
+                        <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer" class="cta-button">View code on GitHub</a>
+                        <a href="products.html#healthtech" class="cta-button ghost">All experiments</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Research divisions -->
+        <!-- System Architecture & Signal Pipeline -->
+        <section id="architecture" class="section">
+            <div class="section-head reveal">
+                <span class="eyebrow">Architecture</span>
+                <h2 class="section-title">Where digital logic meets <em>living care</em></h2>
+                <p class="section-lead">
+                    An end-to-end local-first topology designed for absolute data autonomy, high fault tolerance, and zero external dependency.
+                </p>
+            </div>
+
+            <div class="architecture-pipeline reveal">
+                <div class="pipeline-node spotlight active">
+                    <span class="pipeline-node-num">LAYER 01</span>
+                    <h4>Edge Hardware</h4>
+                    <p>ESP32 dual-core microcontrollers running FreeRTOS. Low-power sensors, hardware interrupts, and mechanical actuation.</p>
+                    <span class="pipeline-tag">ESP-IDF · C/C++ · GPIO</span>
+                </div>
+
+                <div class="pipeline-node spotlight">
+                    <span class="pipeline-node-num">LAYER 02</span>
+                    <h4>Local Message Bus</h4>
+                    <p>Deterministic MQTT broker routing high-frequency sensor readings and dispatch acknowledgments under 15ms.</p>
+                    <span class="pipeline-tag">Mosquitto · QoS 1 · WebSockets</span>
+                </div>
+
+                <div class="pipeline-node spotlight">
+                    <span class="pipeline-node-num">LAYER 03</span>
+                    <h4>Edge Intelligence</h4>
+                    <p>Lightweight anomaly detection algorithms running on-device to flag missed cycles without leaking personal data.</p>
+                    <span class="pipeline-tag">Quantized ML · Zero Cloud</span>
+                </div>
+
+                <div class="pipeline-node spotlight">
+                    <span class="pipeline-node-num">LAYER 04</span>
+                    <h4>Caregiver Dashboard</h4>
+                    <p>Clean, accessible web interface streaming live telemetry directly from local brokers. Offline-capable.</p>
+                    <span class="pipeline-tag">Vanilla JS · Reactive Streams</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Divisions / Labs -->
         <section id="divisions" class="section">
             <div class="section-head reveal">
                 <span class="eyebrow">Labs</span>
                 <h2 class="section-title">Research divisions</h2>
             </div>
-            <div class="index-list">
-                <div class="index-item reveal">
-                    <span class="index-num">01</span>
-                    <div>
-                        <h3>Edge AI Systems</h3>
-                        <p>Intelligence at the source. Compact, energy-efficient AI that runs on-device — bringing real-time decisions to the edge without compromise.</p>
-                        <div class="keywords">
-                            <span class="keyword">Sensor-driven decisions</span>
-                            <span class="keyword">Real-time anomaly detection</span>
-                            <span class="keyword">Predictive edge models</span>
-                            <span class="keyword">Secure embedded logic</span>
-                        </div>
-                        <a href="#products" class="enter-lab">Explore Edge AI →</a>
+            <div class="divisions-grid">
+                <article class="division-card spotlight reveal">
+                    <div class="division-top">
+                        <span class="division-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2.5v3.5M15 2.5v3.5M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/></svg>
+                        </span>
+                        <span class="index-num">01</span>
                     </div>
-                </div>
+                    <h3>Edge AI Systems</h3>
+                    <p>Intelligence at the source. Compact, energy-efficient AI that runs on-device — bringing real-time decisions to the edge without cloud dependencies.</p>
+                    <div class="keywords">
+                        <span class="keyword">Sensor-driven decisions</span>
+                        <span class="keyword">Real-time anomaly detection</span>
+                        <span class="keyword">Predictive edge models</span>
+                        <span class="keyword">Secure embedded logic</span>
+                    </div>
+                    <a href="products.html#edge-ai" class="enter-lab">Explore Edge AI →</a>
+                </article>
 
-                <div class="index-item reveal">
-                    <span class="index-num">02</span>
-                    <div>
-                        <h3>Assistive HealthTech</h3>
-                        <p>AI that restores, enhances, and empowers — designed to restore mobility, improve communication, and improve lives, especially for underserved communities.</p>
-                        <div class="keywords">
-                            <span class="keyword">Brain-computer interfaces</span>
-                            <span class="keyword">Smart mobility aids</span>
-                            <span class="keyword">Sensory augmentation</span>
-                            <span class="keyword">Neuro-adaptive systems</span>
-                        </div>
-                        <a href="#products" class="enter-lab">Explore HealthTech →</a>
+                <article class="division-card is-bio spotlight reveal">
+                    <div class="division-top">
+                        <span class="division-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/><path d="M7 12.5h2.6l1.3-2.2 2 4.2 1.3-2H17"/></svg>
+                        </span>
+                        <span class="index-num">02</span>
                     </div>
-                </div>
+                    <h3>Assistive HealthTech</h3>
+                    <p>Assistive devices that restore autonomy, foster independence, and empower individuals with disabilities and older adults through dignified technology.</p>
+                    <div class="keywords">
+                        <span class="keyword">Adaptive mobility aids</span>
+                        <span class="keyword">Sensory augmentation</span>
+                        <span class="keyword">Medication adherence</span>
+                        <span class="keyword">Pediatric accessibility</span>
+                    </div>
+                    <a href="products.html#healthtech" class="enter-lab">Explore HealthTech →</a>
+                </article>
 
-                <div class="index-item reveal">
-                    <span class="index-num">03</span>
-                    <div>
-                        <h3>AgriTech &amp; Hydroponics</h3>
-                        <p>Grow smarter, sustain longer. Reinventing agriculture through AI-augmented farming, autonomous hydroponics, and precision environmental systems.</p>
-                        <div class="keywords">
-                            <span class="keyword">AI irrigation &amp; nutrients</span>
-                            <span class="keyword">Climate-adaptive hydroponics</span>
-                            <span class="keyword">Multi-sensor farm networks</span>
-                            <span class="keyword">Sustainable resource use</span>
-                        </div>
-                        <a href="#products" class="enter-lab">Explore AgriTech →</a>
+                <article class="division-card is-bio spotlight reveal">
+                    <div class="division-top">
+                        <span class="division-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9"/><path d="M12 12c0-4.2 3-7 8-7 0 5-3 7-8 7z"/><path d="M12 14.5c0-3.2-2.4-5.5-7-5.5 0 4 2.4 5.5 7 5.5z"/></svg>
+                        </span>
+                        <span class="index-num">03</span>
                     </div>
-                </div>
+                    <h3>AgriTech &amp; Hydroponics</h3>
+                    <p>Grow smarter, sustain longer. Re-imagining environmental systems through micro-climate monitoring, autonomous hydroponic dosing, and multi-sensor telemetry.</p>
+                    <div class="keywords">
+                        <span class="keyword">Precision EC/pH dosing</span>
+                        <span class="keyword">Climate-adaptive hydroponics</span>
+                        <span class="keyword">Multi-sensor farm networks</span>
+                        <span class="keyword">Resource conservation</span>
+                    </div>
+                    <a href="products.html#agritech" class="enter-lab">Explore AgriTech →</a>
+                </article>
 
-                <div class="index-item reveal">
-                    <span class="index-num">04</span>
-                    <div>
-                        <h3>Bioethics-Coded Intelligence</h3>
-                        <p>AI guided by conscience — ethical reasoning embedded in every decision, so the technology enhances dignity, inclusivity, and ecological balance.</p>
-                        <div class="keywords">
-                            <span class="keyword">Transparency &amp; trust</span>
-                            <span class="keyword">Privacy by design</span>
-                            <span class="keyword">Open collaboration</span>
-                            <span class="keyword">Responsible innovation</span>
-                        </div>
-                        <a href="about.html" class="enter-lab">The ethics framework →</a>
+                <article class="division-card spotlight reveal">
+                    <div class="division-top">
+                        <span class="division-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6L12 3z"/><path d="M8.8 12.2l2.2 2.2 4.3-4.6"/></svg>
+                        </span>
+                        <span class="index-num">04</span>
                     </div>
-                </div>
+                    <h3>Bioethics-Coded Intelligence</h3>
+                    <p>Technology guided by conscience — ethical reasoning and local-first data protection embedded in every design, safeguarding user dignity.</p>
+                    <div class="keywords">
+                        <span class="keyword">Local data sovereignty</span>
+                        <span class="keyword">Open-source transparency</span>
+                        <span class="keyword">Affordable care access</span>
+                        <span class="keyword">Human-in-the-loop safety</span>
+                    </div>
+                    <a href="about.html" class="enter-lab">The ethics framework →</a>
+                </article>
             </div>
         </section>
 
-        <!-- Products -->
-        <section id="products" class="section">
+        <!-- Lab Notes / Field Dispatches -->
+        <section id="dispatches" class="section">
             <div class="section-head reveal">
-                <span class="eyebrow">Experiments</span>
-                <h2 class="section-title">What's being explored</h2>
-                <p class="section-lead">A few of the ideas in progress across health, agriculture, and the edge. Some are built and open-source; most are still concepts.</p>
+                <span class="eyebrow">Lab Notes</span>
+                <h2 class="section-title">Field dispatches from the <em>workbench</em></h2>
+                <p class="section-lead">Technical observations, firmware decisions, and design lessons learned while building in the open.</p>
             </div>
-            <div class="product-preview-grid">
-                <a href="products.html#healthtech" class="product-preview-card reveal">
-                    <span class="index-num">01</span>
-                    <h3>NeuraLink Bridge X1</h3>
-                    <p>A next-generation brain-computer interface enabling direct neural control of digital devices, with ultra-low-latency signal processing.</p>
-                </a>
-                <a href="products.html#healthtech" class="product-preview-card featured reveal">
-                    <span class="index-num">02</span>
-                    <h3>DoseXTrack</h3>
-                    <p>An AI-powered platform for tracking and optimizing medication dosage — keeping patients safe and treatment effective.</p>
-                </a>
-                <a href="products.html#agritech" class="product-preview-card reveal">
-                    <span class="index-num">03</span>
-                    <h3>HydroMind Controller</h3>
-                    <p>An intelligent hydroponics system that uses AI to monitor plant health and adjust nutrients, pH, and lighting automatically.</p>
-                </a>
+
+            <div class="dispatches-grid">
+                <article class="dispatch-card spotlight reveal">
+                    <div class="dispatch-meta">
+                        <span class="dispatch-tag">Firmware</span>
+                        <span>·</span>
+                        <time>Entry 03</time>
+                    </div>
+                    <h3>Why MQTT beats HTTP for microcontroller assistive dispensers</h3>
+                    <p>Bench-testing latency and power consumption on the ESP32 under intermittent Wi-Fi conditions. Why lightweight pub/sub with QoS 1 guarantees critical delivery.</p>
+                    <a href="products.html#healthtech" class="dispatch-read">Read technical notes →</a>
+                </article>
+
+                <article class="dispatch-card spotlight reveal">
+                    <div class="dispatch-meta">
+                        <span class="dispatch-tag">Industrial Design</span>
+                        <span>·</span>
+                        <time>Entry 02</time>
+                    </div>
+                    <h3>Designing non-stigmatizing assistive enclosures</h3>
+                    <p>Medical devices often look cold, sterile, and clinical. Lessons learned from creating soft, friendly 3D-printable PETG forms that children feel proud to keep on their desks.</p>
+                    <a href="about.html" class="dispatch-read">Read design philosophy →</a>
+                </article>
+
+                <article class="dispatch-card spotlight reveal">
+                    <div class="dispatch-meta">
+                        <span class="dispatch-tag">Bioethics</span>
+                        <span>·</span>
+                        <time>Entry 01</time>
+                    </div>
+                    <h3>Local-first health telemetry: Why health data shouldn't leave the room</h3>
+                    <p>How we design assistive architectures that function 100% offline, storing medication logs locally without centralized cloud servers or subscription locks.</p>
+                    <a href="about.html" class="dispatch-read">Read privacy framework →</a>
+                </article>
             </div>
-            <div class="cta-buttons reveal" style="margin-top: 3rem;">
-                <a href="products.html" class="cta-button">Explore all experiments</a>
+        </section>
+
+        <!-- Collaboration -->
+        <section id="collaborate" class="collaborate">
+            <div class="collaborate-panel">
+                <div class="section-head center reveal">
+                    <span class="eyebrow">Participation</span>
+                    <h2 class="collaborate-title">Build it with the lab</h2>
+                    <p class="section-lead">
+                        No sales funnels, no investor pitch decks — just open engineering. If any of this resonates with you, or you want to build alongside us, you are welcome here.
+                    </p>
+                </div>
+
+                <div class="collaboration-opportunities">
+                    <div class="card spotlight reveal">
+                        <span class="index-num">01</span>
+                        <h3>Inspect &amp; Fork on GitHub</h3>
+                        <p>Read the firmware, examine circuit pinouts, open issues, or submit a pull request. Everything lives in public repositories.</p>
+                    </div>
+                    <div class="card spotlight reveal">
+                        <span class="index-num">02</span>
+                        <h3>Share Clinical &amp; Usability Feedback</h3>
+                        <p>Caregivers, occupational therapists, and makers: your real-world feedback directly shapes what features get prototyped next.</p>
+                    </div>
+                    <div class="card spotlight reveal">
+                        <span class="index-num">03</span>
+                        <h3>Integrations &amp; Tooling</h3>
+                        <p>Test our open APIs, integrate MQTT sidecars, or contribute agentic tools designed for embedded IoT maintenance.</p>
+                    </div>
+                </div>
+
+                <div class="collaborate-options reveal">
+                    <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer" class="cta-button">View GitHub repositories</a>
+                    <a href="contact.html" class="cta-button ghost">Start a conversation</a>
+                </div>
             </div>
         </section>
     </div>
 
-    <!-- Collaborate -->
-    <section id="collaborate" class="collaborate">
-        <div class="section-head reveal">
-            <span class="eyebrow">Get involved</span>
-            <h2 class="collaborate-title">Build it with me</h2>
-            <p class="section-lead">
-                No funding rounds, no sales calls — just open work. If any of this is useful to you, or
-                you'd like to help shape it, you're welcome here.
-            </p>
-        </div>
+    <!-- Interactive Floating Trigger -->
+    <div class="chat-toggle" role="button" aria-label="Open AI Lab Terminal" title="Open AI Lab Terminal">
+        <span>✦</span>
+    </div>
 
-        <div class="collaboration-opportunities">
-            <div class="card reveal">
-                <span class="index-num">01</span>
-                <h3>Contribute on GitHub</h3>
-                <p>Read the code, open an issue, or send a pull request. Everything that's built lives in the open.</p>
+    <!-- Interactive AI Lab Terminal Drawer -->
+    <aside class="terminal-drawer" id="terminalDrawer" aria-label="Lab Assistant Terminal">
+        <div class="terminal-topbar">
+            <div class="terminal-title">
+                <span class="pulse-dot"></span>
+                <span>Bioxbinary AI Lab Agent</span>
             </div>
-            <div class="card reveal">
-                <span class="index-num">02</span>
-                <h3>Share ideas &amp; feedback</h3>
-                <p>Tell me what would actually be useful — your input helps decide what gets built next.</p>
-            </div>
-            <div class="card reveal">
-                <span class="index-num">03</span>
-                <h3>Follow along</h3>
-                <p>Get the occasional update as experiments grow, succeed, or fail out loud.</p>
+            <button class="terminal-close-btn" id="terminalCloseBtn" aria-label="Close terminal">&times;</button>
+        </div>
+        <div class="terminal-conversation" id="terminalConversation">
+            <div class="terminal-msg bot">
+                Hello. I am the <strong>Bioxbinary lab assistant</strong>. Ask me about our active builds, firmware architecture, or how to collaborate.
+                <div class="terminal-quick-prompts">
+                    <button class="quick-chip" data-prompt="What is DoseXTrack?">What is DoseXTrack?</button>
+                    <button class="quick-chip" data-prompt="Tell me about the lab">About the lab?</button>
+                    <button class="quick-chip" data-prompt="What is your tech stack?">Tech Stack?</button>
+                    <button class="quick-chip" data-prompt="How can I collaborate?">How to collaborate?</button>
+                </div>
             </div>
         </div>
-
-        <div class="collaborate-options reveal">
-            <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer" class="cta-button">View the code</a>
-            <a href="contact.html" class="cta-button ghost">Say hello</a>
+        <div class="terminal-input-bar">
+            <input type="text" class="terminal-input" id="terminalInput" placeholder="Query lab architecture or builds..." autocomplete="off">
+            <button class="terminal-send-btn" id="terminalSendBtn">Send</button>
         </div>
-    </section>
+    </aside>
 
-    <div class="chat-toggle" role="button" aria-label="Open chat"><span>✦</span></div>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo">bioxbinary</a>
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
                 <p>Think binary. Build bio.</p>
             </div>
             <div class="footer-section">
                 <h3>Explore</h3>
                 <a href="about.html">About</a>
+                <a href="#hardware">Builds</a>
+                <a href="#architecture">Architecture</a>
                 <a href="#divisions">Labs</a>
-                <a href="#products">Work</a>
-                <a href="#collaborate">Collaborate</a>
+                <a href="products.html">Experiments</a>
                 <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>Project</h3>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Contribute</a>
-                <a href="contact.html">Follow along</a>
-                <a href="about.html">Mission</a>
+                <h3>Open Source</h3>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Repositories</a>
+                <a href="about.html">Ethics &amp; Privacy</a>
+                <a href="contact.html">Send Feedback</a>
             </div>
             <div class="footer-section">
                 <h3>Network</h3>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X (@bioxbinary)</a>
                 <a href="https://www.instagram.com/bioxbinary" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© 2026 Bioxbinary</span>
-            <span>Think binary. Build bio.</span>
+            <span>© 2026 Bioxbinary · Independent Lab</span>
+            <span>Local-First · Open-Source · AI × Assistive Tech</span>
         </div>
     </footer>
 
