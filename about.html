@@ -4,22 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — Bioxbinary</title>
-    <meta name="description" content="Learn about Bioxbinary's mission to merge AI and biotechnology to create assistive technologies and sustainable systems.">
+    <meta name="description" content="Learn about Bioxbinary — an independent deep-tech lab merging edge AI with assistive biotechnology and local-first hardware.">
+    <meta name="theme-color" content="#07090a">
+
+    <!-- OpenGraph & Twitter Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bioxbinary.in/about.html">
+    <meta property="og:title" content="About — Bioxbinary">
+    <meta property="og:description" content="An independent lab merging edge AI with assistive biotechnology and local-first hardware.">
+    <meta property="og:image" content="https://www.bioxbinary.in/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bioxbinary logo — Think binary. Build bio.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About — Bioxbinary">
+    <meta name="twitter:description" content="Where digital logic meets living systems.">
+    <meta name="twitter:image" content="https://www.bioxbinary.in/assets/images/og-image.png">
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/favicon.ico?v=2" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=2">
+    <link rel="manifest" href="site.webmanifest?v=2">
+
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo">bioxbinary</a>
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
+                <div class="lab-status">
+                    <span>Independent Lab</span>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
-                <li><a href="index.html#divisions">Labs</a></li>
-                <li><a href="products.html">Work</a></li>
-                <li><a href="index.html#collaborate">Collaborate</a></li>
+                <li><a href="index.html#hardware">Builds</a></li>
+                <li><a href="index.html#architecture">Architecture</a></li>
+                <li><a href="products.html">Experiments</a></li>
+                <li><a href="index.html#dispatches">Notes</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation">
@@ -29,73 +60,138 @@
     </nav>
 
     <div class="container">
-        <section id="about" class="section" style="padding-top: 9rem;">
+        <!-- Main About Section -->
+        <section id="about" class="section" style="padding-top: 9.5rem;">
             <div class="section-head reveal">
-                <span class="eyebrow">Mission</span>
-                <h2 class="section-title">Why this <em>exists</em></h2>
+                <span class="eyebrow">Origin &amp; Mission</span>
+                <h2 class="section-title">Why this lab <em>exists</em></h2>
             </div>
             <div class="about-content reveal">
                 <p class="about-text">
-                    Bioxbinary is an independent lab I build in public — a place to pair the logic of
-                    binary with the complexity of biology, and to <strong>share what I learn along the way.</strong>
-                    It exists because this work feels worth doing, and worth giving away.
+                    Bioxbinary is an independent deep-tech lab. It was created to pair the crisp, deterministic logic of <strong>binary computing</strong> with the delicate, adaptive realities of <strong>biological care.</strong>
                 </p>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+                    Most modern healthcare technology suffers from predatory cloud subscription models, vendor lock-in, and fragile dependencies on external servers. When an elderly person or a child with special needs relies on an assistive device, that device must work 100% of the time—even if the internet goes down.
+                </p>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2.5rem;">
+                    We believe the most humane technology is <strong>local-first, open-source, and physically repairable</strong>. We build tangible devices on real microcontrollers, share all schematics and firmware openly, and operate with an AI-augmented workflow that allows a tiny lab to innovate with the speed of an entire engineering organization.
+                </p>
+
+                <!-- Core Pillars -->
                 <ul class="mission-list">
                     <li>
-                        <strong>Assistive technologies for human enhancement</strong>
-                        Exploring neural interfaces and intelligent mobility — with the aim of restoring autonomy and amplifying human potential.
+                        <strong>01 · Assistive Technologies for Human Autonomy</strong>
+                        Building non-stigmatizing, accessible hardware—from smart medication adherence dispensers like DoseXTrack to sensory augmentation aids—engineered to restore self-reliance and peace of mind.
                     </li>
                     <li>
-                        <strong>Sustainable systems for the planet</strong>
-                        Exploring AI-driven agricultural and hydroponic systems that use resources wisely, in support of food security and ecological balance.
+                        <strong>02 · Local-First Data Sovereignty</strong>
+                        Zero patient data extraction. All telemetry, dosing logs, and biometric inferences run locally on deterministic microcontrollers over MQTT and local networks without leaking private health data to corporate clouds.
                     </li>
                     <li>
-                        <strong>Bioethics-coded intelligence</strong>
-                        Holding every line of code and every biological idea to an ethical standard that safeguards human dignity and a shared environment.
+                        <strong>03 · Open Hardware &amp; Transparent Engineering</strong>
+                        Every PCB schematic, 3D CAD model, and line of FreeRTOS firmware is published under permissive open-source licenses. Care should never be locked behind a paywall.
+                    </li>
+                    <li>
+                        <strong>04 · Small Lab, AI-Assisted Workflow</strong>
+                        A deliberately small, hands-on lab. AI tools speed up firmware drafting, documentation, and research notes, while every device is still built, bench-tested, and reviewed by hand.
                     </li>
                 </ul>
             </div>
 
-            <div class="cta-buttons reveal" style="margin-top: 3rem;">
-                <a href="products.html" class="cta-button">See the experiments</a>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer" class="cta-button ghost">View the code</a>
+            <!-- Workbench & Tooling -->
+            <div class="reveal" style="margin-top: 5rem;">
+                <div class="section-head">
+                    <span class="eyebrow">The Lab Workbench</span>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.8rem;">How we build</h3>
+                    <p class="section-lead">The physical and computational tools powering Bioxbinary experiments.</p>
+                </div>
+                <div class="feature-grid" style="margin-top: 2rem;">
+                    <div class="feature-card">
+                        <span class="index-num">HW</span>
+                        <h3>Embedded Microcontrollers</h3>
+                        <p>ESP32-S3, ESP32-WROOM, ARM Cortex-M0/M4, FreeRTOS, ESP-IDF, I2C/SPI sensor buses, hardware RTC timers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="index-num">NET</span>
+                        <h3>Local Messaging &amp; Protocols</h3>
+                        <p>Mosquitto MQTT brokers, QoS 1 determinism, WebSockets, BLE 5.0, TLS 1.3 ephemeral cryptography.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="index-num">FAB</span>
+                        <h3>Rapid Physical Prototyping</h3>
+                        <p>Custom parametric 3D CAD design, PETG/PLA additive manufacturing, ergonomic tactile switches, breadboard testbenches.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-buttons reveal" style="margin-top: 4.5rem;">
+                <a href="products.html" class="cta-button">Explore the experiments</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer" class="cta-button ghost">View code on GitHub</a>
             </div>
         </section>
     </div>
 
+    <!-- Interactive Floating Trigger -->
+    <div class="chat-toggle" role="button" aria-label="Open AI Lab Terminal" title="Open AI Lab Terminal">
+        <span>✦</span>
+    </div>
+
+    <!-- Interactive AI Lab Terminal Drawer -->
+    <aside class="terminal-drawer" id="terminalDrawer" aria-label="Lab Assistant Terminal">
+        <div class="terminal-topbar">
+            <div class="terminal-title">
+                <span class="pulse-dot"></span>
+                <span>Bioxbinary AI Lab Agent</span>
+            </div>
+            <button class="terminal-close-btn" id="terminalCloseBtn" aria-label="Close terminal">&times;</button>
+        </div>
+        <div class="terminal-conversation" id="terminalConversation">
+            <div class="terminal-msg bot">
+                Hello. Ask me about our mission, bioethics principles, or how the lab works.
+                <div class="terminal-quick-prompts">
+                    <button class="quick-chip" data-prompt="Tell me about the lab">About the lab?</button>
+                    <button class="quick-chip" data-prompt="What is your bioethics framework?">Bioethics?</button>
+                    <button class="quick-chip" data-prompt="What is your tech stack?">Tech Stack?</button>
+                </div>
+            </div>
+        </div>
+        <div class="terminal-input-bar">
+            <input type="text" class="terminal-input" id="terminalInput" placeholder="Ask about our philosophy or stack..." autocomplete="off">
+            <button class="terminal-send-btn" id="terminalSendBtn">Send</button>
+        </div>
+    </aside>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo">bioxbinary</a>
-                <p>Think Binary. Build Bio. Building at the intersection of AI and biotechnology.</p>
+                <a href="index.html" class="logo"><img class="logo-mark" src="assets/images/logo-mark-96.png" alt="" width="76" height="96">bioxbinary</a>
+                <p>Think binary. Build bio.</p>
             </div>
             <div class="footer-section">
                 <h3>Explore</h3>
                 <a href="about.html">About</a>
-                <a href="index.html#divisions">Labs</a>
-                <a href="products.html">Work</a>
-                <a href="index.html#collaborate">Collaborate</a>
+                <a href="index.html#hardware">Builds</a>
+                <a href="index.html#architecture">Architecture</a>
+                <a href="products.html">Experiments</a>
                 <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>Project</h3>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Contribute</a>
-                <a href="contact.html">Follow along</a>
-                <a href="about.html">Mission</a>
+                <h3>Open Source</h3>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">Repositories</a>
+                <a href="about.html">Ethics &amp; Privacy</a>
             </div>
             <div class="footer-section">
                 <h3>Network</h3>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://github.com/bioxbinary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X (@bioxbinary)</a>
                 <a href="https://www.instagram.com/bioxbinary" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://x.com/bioxbinary" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://www.youtube.com/@bioxbinary" target="_blank" rel="noopener noreferrer">YouTube</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© 2026 Bioxbinary</span>
-            <span>Think Binary. Build Bio.</span>
+            <span>© 2026 Bioxbinary · Independent Lab</span>
+            <span>Think binary. Build bio.</span>
         </div>
     </footer>
 
